@@ -41,7 +41,7 @@ def main(selected: set[str]) -> int:
         path.write_text(original.replace(old, new))
         try:
             r = subprocess.run(
-                ["dotnet", "test", "tests/BookingApp.Tests", "-v", "q", "--nologo"],
+                ["dotnet", "test", "tests/BookingApp.Tests", "--nologo", "--logger", "console;verbosity=normal"],
                 cwd=ROOT, capture_output=True, text=True, check=False,
             )
         finally:
