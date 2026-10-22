@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Room booking</title>
+<style>
+  :root { --bg: #f4f5f7; --surface: #fff; --ink: #1b1d22; --muted: #5d6270; --line: #d4d7de; --accent: #2b55c7; --bad: #b42318; --bad-soft: #fde3df; --ok: #17784b; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.5 system-ui, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 24px 16px 48px; display: grid; gap: 20px; }
+  h1 { margin: 0; font-size: 28px; }
+  form, section { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 16px; display: grid; gap: 12px; }
+  .row { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; }
+  .field { display: grid; gap: 4px; }
+  label { font-size: 14px; color: var(--muted); }
+  input, select, button { font: inherit; padding: 8px 10px; border-radius: 8px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); }
+  button { background: var(--accent); color: #fff; border-color: var(--accent); cursor: pointer; font-weight: 600; }
+  button.cancel { background: transparent; color: var(--bad); border-color: var(--bad); padding: 4px 10px; }
+  [role=alert]:empty { display: none; }
+  [role=alert] { background: var(--bad-soft); color: var(--bad); border-radius: 8px; padding: 10px 12px; }
+  #status { color: var(--ok); min-height: 1.5em; }
+  ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+  li { display: flex; justify-content: space-between; align-items: center; gap: 12px; border: 1px solid var(--line); border-radius: 8px; padding: 8px 12px; }
+  .time { font-variant-numeric: tabular-nums; font-weight: 600; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Room booking</h1>
+
+  <form id="book" novalidate aria-labelledby="book-title">
+    <h2 id="book-title" style="margin:0;font-size:18px">Book a room</h2>
+    <div class="row">
+      <div class="field"><label for="room">Room</label><select id="room" name="room"></select></div>
+      <div class="field"><label for="date">Date</label><input id="date" name="date" type="date" required></div>
+    </div>
+    <div class="row">
+      <div class="field"><label for="start">Start</label><input id="start" name="start" type="time" step="900" value="10:00" required></div>
+      <div class="field"><label for="end">End</label><input id="end" name="end" type="time" step="900" value="11:00" required></div>
+      <div class="field"><label for="attendees">Attendees</label><input id="attendees" name="attendees" type="number" min="1" value="2" required></div>
+    </div>
+    <div class="field"><label for="title">Title</label><input id="title" name="title" maxlength="100" required></div>
+    <div role="alert" id="error"></div>
+    <div id="status" aria-live="polite"></div>
+    <button type="submit">Book</button>
+  </form>
+
+  <section aria-labelledby="list-title">
+    <h2 id="list-title" style="margin:0;font-size:18px">Bookings for this room and day</h2>
+    <ul id="bookings" aria-label="Bookings"></ul>
+    <p id="empty" style="margin:0;color:var(--muted)">No bookings yet.</p>
+  </section>
+</main>
+<script>
+const $ = (id) => document.getElementById(id);
+const hm = (t) => t.slice(0, 5);
+
+async function loadRooms() {
+  const rooms = await (await fetch('/api/rooms')).json();
+  $('room').innerHTML = rooms.map((r) => `<option value="${r.id}">${r.name} (${r.capacity} seats)</option>`).join('');
+}
+
+async function loadBookings() {
+  const q = new URLSearchParams({ roomId: $('room').value, date: $('date').value });
+  if (!$('date').value) { render([]); return; }
+  const res = await fetch('/api/bookings?' + q);
+  render(res.ok ? await res.json() : []);
+}
+
+function render(list) {
+  $('empty').hidden = list.length > 0;
+  $('bookings').innerHTML = '';
+  for (const b of list) {
+    const li = document.createElement('li');
+    const text = document.createElement('span');
+    text.innerHTML = `<span class="time">${hm(b.start)}–${hm(b.end)}</span> `;
+    text.append(document.createTextNode(`${b.title} · ${b.attendees} people`));
+    const btn = document.createElement('button');
+    btn.className = 'cancel';
+    btn.type = 'button';
+    btn.textContent = 'Cancel';
+    btn.setAttribute('aria-label', `Cancel ${b.title}`);
+    btn.onclick = async () => {
+      await fetch('/api/bookings/' + b.id, { method: 'DELETE' });
+      $('status').textContent = `Cancelled: ${b.title}`;
+      await loadBookings();
+    };
+    li.append(text, btn);
+    $('bookings').append(li);
+  }
+}
+
+$('book').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  $('error').textContent = '';
+  $('status').textContent = '';
+  const body = {
+    roomId: Number($('room').value), date: $('date').value, start: $('start').value, end: $('end').value,
+    title: $('title').value, attendees: Number($('attendees').value),
+  };
+  const res = await fetch('/api/bookings', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
+  if (res.status === 201) {
+    $('status').textContent = `Booked: ${body.title}`;
+    $('title').value = '';
+  } else {
+    const p = await res.json().catch(() => ({}));
+    const messages = p.errors ? Object.values(p.errors).flat() : [p.detail || p.title || 'Something went wrong.'];
+    $('error').textContent = (res.status === 409 ? 'Already booked. ' : '') + messages.join(' ');
+  }
+  await loadBookings();
+});
+$('room').addEventListener('change', loadBookings);
+$('date').addEventListener('change', loadBookings);
+
+(async () => {
+  await loadRooms();
+  $('date').value = new Date().toISOString().slice(0, 10);
+  await loadBookings();
+  document.body.dataset.ready = 'true';
+})();
+</script>
+</body>
+</html>
