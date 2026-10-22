@@ -1,0 +1,2058 @@
+Test run for /home/runner/work/dotnet-testing/dotnet-testing/tests/BookingApp.Tests/bin/Debug/net10.0/BookingApp.Tests.dll (.NETCoreApp,Version=v10.0)
+A total of 1 test files matched the specified pattern.
+NUnit Adapter 5.0.0.0: Test execution started
+Running all tests in /home/runner/work/dotnet-testing/dotnet-testing/tests/BookingApp.Tests/bin/Debug/net10.0/BookingApp.Tests.dll
+   NUnit3TestExecutor discovered 54 of 54 NUnit test cases using Current Discovery mode, Non-Explicit run
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Production
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /home/runner/work/dotnet-testing/dotnet-testing/src/BookingApp
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/bookings - application/json;+charset=utf-8 95
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Http.Result.CreatedResult[1]
+      Setting HTTP status code 201.
+info: Microsoft.AspNetCore.Http.Result.CreatedResult[3]
+      Writing value of type 'Booking' as Json.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 93.5858ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost/api/bookings/1 - - -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'HTTP: GET /api/bookings/{id:int}'
+info: Microsoft.AspNetCore.Http.Result.OkObjectResult[1]
+      Setting HTTP status code 200.
+info: Microsoft.AspNetCore.Http.Result.OkObjectResult[3]
+      Writing value of type 'Booking' as Json.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'HTTP: GET /api/bookings/{id:int}'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://localhost/api/bookings/1 - 200 - application/json;+charset=utf-8 2.5208ms
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Production
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /home/runner/work/dotnet-testing/dotnet-testing/src/BookingApp
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/bookings - application/json;+charset=utf-8 95
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Http.Result.CreatedResult[1]
+      Setting HTTP status code 201.
+info: Microsoft.AspNetCore.Http.Result.CreatedResult[3]
+      Writing value of type 'Booking' as Json.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 12.7936ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 DELETE http://localhost/api/bookings/1 - - -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'HTTP: DELETE /api/bookings/{id:int}'
+info: Microsoft.AspNetCore.Http.Result.NoContentResult[1]
+      Setting HTTP status code 204.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'HTTP: DELETE /api/bookings/{id:int}'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 DELETE http://localhost/api/bookings/1 - 204 - - 1.5833ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 DELETE http://localhost/api/bookings/1 - - -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'HTTP: DELETE /api/bookings/{id:int}'
+info: Microsoft.AspNetCore.Http.Result.NotFoundObjectResult[1]
+      Setting HTTP status code 404.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'HTTP: DELETE /api/bookings/{id:int}'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 DELETE http://localhost/api/bookings/1 - 404 - application/problem+json 9.8574ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/bookings - application/json;+charset=utf-8 95
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Http.Result.CreatedResult[1]
+      Setting HTTP status code 201.
+info: Microsoft.AspNetCore.Http.Result.CreatedResult[3]
+      Writing value of type 'Booking' as Json.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 0.3136ms
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Production
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /home/runner/work/dotnet-testing/dotnet-testing/src/BookingApp
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/bookings - application/json;+charset=utf-8 95
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Http.Result.CreatedResult[1]
+      Setting HTTP status code 201.
+info: Microsoft.AspNetCore.Http.Result.CreatedResult[3]
+      Writing value of type 'Booking' as Json.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 11.5107ms
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Production
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /home/runner/work/dotnet-testing/dotnet-testing/src/BookingApp
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/bookings - application/json;+charset=utf-8 95
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Http.HttpResults.ProblemHttpResult[1]
+      Setting HTTP status code 400.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 400 - application/problem+json 12.3201ms
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Production
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /home/runner/work/dotnet-testing/dotnet-testing/src/BookingApp
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/bookings - application/json;+charset=utf-8 96
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Http.Result.CreatedResult[1]
+      Setting HTTP status code 201.
+info: Microsoft.AspNetCore.Http.Result.CreatedResult[3]
+      Writing value of type 'Booking' as Json.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 10.7064ms
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Production
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /home/runner/work/dotnet-testing/dotnet-testing/src/BookingApp
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/bookings - application/json;+charset=utf-8 95
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Http.HttpResults.ProblemHttpResult[1]
+      Setting HTTP status code 400.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 400 - application/problem+json 10.3116ms
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Production
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /home/runner/work/dotnet-testing/dotnet-testing/src/BookingApp
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/bookings - application/json;+charset=utf-8 91
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Http.Result.CreatedResult[1]
+      Setting HTTP status code 201.
+info: Microsoft.AspNetCore.Http.Result.CreatedResult[3]
+      Writing value of type 'Booking' as Json.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 10.6381ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/bookings - application/json;+charset=utf-8 92
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Http.Result.CreatedResult[1]
+      Setting HTTP status code 201.
+info: Microsoft.AspNetCore.Http.Result.CreatedResult[3]
+      Writing value of type 'Booking' as Json.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 1.2232ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/bookings - application/json;+charset=utf-8 96
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Http.Result.CreatedResult[1]
+      Setting HTTP status code 201.
+info: Microsoft.AspNetCore.Http.Result.CreatedResult[3]
+      Writing value of type 'Booking' as Json.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 0.2536ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost/api/bookings?roomId=2&date=2026-10-02 - - -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'HTTP: GET /api/bookings'
+info: Microsoft.AspNetCore.Http.Result.OkObjectResult[1]
+      Setting HTTP status code 200.
+info: Microsoft.AspNetCore.Http.Result.OkObjectResult[3]
+      Writing value of type 'List`1' as Json.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'HTTP: GET /api/bookings'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://localhost/api/bookings?roomId=2&date=2026-10-02 - 200 - application/json;+charset=utf-8 8.9484ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost/api/bookings?date=tomorrow - - -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'HTTP: GET /api/bookings'
+info: Microsoft.AspNetCore.Http.HttpResults.ProblemHttpResult[1]
+      Setting HTTP status code 400.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'HTTP: GET /api/bookings'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://localhost/api/bookings?date=tomorrow - 400 - application/problem+json 0.7417ms
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Production
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /home/runner/work/dotnet-testing/dotnet-testing/src/BookingApp
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/bookings - application/json;+charset=utf-8 10
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 400 - application/problem+json 11.6715ms
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Production
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /home/runner/work/dotnet-testing/dotnet-testing/src/BookingApp
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/bookings - application/json;+charset=utf-8 95
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Http.Result.CreatedResult[1]
+      Setting HTTP status code 201.
+info: Microsoft.AspNetCore.Http.Result.CreatedResult[3]
+      Writing value of type 'Booking' as Json.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 10.0781ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/bookings - application/json;+charset=utf-8 95
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Http.Result.CreatedResult[1]
+      Setting HTTP status code 201.
+info: Microsoft.AspNetCore.Http.Result.CreatedResult[3]
+      Writing value of type 'Booking' as Json.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 1.0128ms
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+
+  Passed Booking_IsCreated_WithLocation_AndCanBeReadBack [249 ms]
+  Passed Cancel_FreesTheSlot_AndIsNotFoundTheSecondTime [48 ms]
+  Passed Fjord with 4 people, its capacity → 201 [17 ms]
+  Passed Fjord with 5 people → 400 [18 ms]
+  Passed Aurora with 16 → 201 [16 ms]
+  Passed nobody → 400 [15 ms]
+  Passed List_FiltersByRoomAndDay_InStartOrder [48 ms]
+  Passed MalformedJson_IsAProblem_NotAStackTrace [22 ms]
+  Passed ends exactly when the other starts → allowed [17 ms]
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Production
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /home/runner/work/dotnet-testing/dotnet-testing/src/BookingApp
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/bookings - application/json;+charset=utf-8 95
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Http.Result.CreatedResult[1]
+      Setting HTTP status code 201.
+info: Microsoft.AspNetCore.Http.Result.CreatedResult[3]
+      Writing value of type 'Booking' as Json.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 13.9983ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/bookings - application/json;+charset=utf-8 95
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Http.Result.CreatedResult[1]
+      Setting HTTP status code 201.
+info: Microsoft.AspNetCore.Http.Result.CreatedResult[3]
+      Writing value of type 'Booking' as Json.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 0.6145ms
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Production
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /home/runner/work/dotnet-testing/dotnet-testing/src/BookingApp
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/bookings - application/json;+charset=utf-8 95
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Http.Result.CreatedResult[1]
+      Setting HTTP status code 201.
+info: Microsoft.AspNetCore.Http.Result.CreatedResult[3]
+      Writing value of type 'Booking' as Json.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 11.6107ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/bookings - application/json;+charset=utf-8 95
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Http.HttpResults.ProblemHttpResult[1]
+      Setting HTTP status code 409.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 409 - application/problem+json 4.3619ms
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Production
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /home/runner/work/dotnet-testing/dotnet-testing/src/BookingApp
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/bookings - application/json;+charset=utf-8 95
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Http.Result.CreatedResult[1]
+      Setting HTTP status code 201.
+info: Microsoft.AspNetCore.Http.Result.CreatedResult[3]
+      Writing value of type 'Booking' as Json.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 16.1810ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/bookings - application/json;+charset=utf-8 95
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Http.HttpResults.ProblemHttpResult[1]
+      Setting HTTP status code 409.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 409 - application/problem+json 4.0230ms
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Production
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /home/runner/work/dotnet-testing/dotnet-testing/src/BookingApp
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/bookings - application/json;+charset=utf-8 95
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Http.Result.CreatedResult[1]
+      Setting HTTP status code 201.
+info: Microsoft.AspNetCore.Http.Result.CreatedResult[3]
+      Writing value of type 'Booking' as Json.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 11.0419ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/bookings - application/json;+charset=utf-8 95
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Http.HttpResults.ProblemHttpResult[1]
+      Setting HTTP status code 409.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 409 - application/problem+json 1.7992ms
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Production
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /home/runner/work/dotnet-testing/dotnet-testing/src/BookingApp
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/bookings - application/json;+charset=utf-8 95
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Http.Result.CreatedResult[1]
+      Setting HTTP status code 201.
+info: Microsoft.AspNetCore.Http.Result.CreatedResult[3]
+      Writing value of type 'Booking' as Json.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 12.1042ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/bookings - application/json;+charset=utf-8 95
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Http.HttpResults.ProblemHttpResult[1]
+      Setting HTTP status code 409.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 409 - application/problem+json 2.1650ms
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Production
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /home/runner/work/dotnet-testing/dotnet-testing/src/BookingApp
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/bookings - application/json;+charset=utf-8 95
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Http.Result.CreatedResult[1]
+      Setting HTTP status code 201.
+info: Microsoft.AspNetCore.Http.Result.CreatedResult[3]
+      Writing value of type 'Booking' as Json.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 10.2517ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/bookings - application/json;+charset=utf-8 95
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Http.HttpResults.ProblemHttpResult[1]
+      Setting HTTP status code 409.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 409 - application/problem+json 2.1216ms
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Production
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /home/runner/work/dotnet-testing/dotnet-testing/src/BookingApp
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/bookings - application/json;+charset=utf-8 95
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Http.HttpResults.ProblemHttpResult[1]
+      Setting HTTP status code 400.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 400 - application/problem+json 10.3161ms
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Production
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /home/runner/work/dotnet-testing/dotnet-testing/src/BookingApp
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/bookings - application/json;+charset=utf-8 95
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Http.Result.CreatedResult[1]
+      Setting HTTP status code 201.
+info: Microsoft.AspNetCore.Http.Result.CreatedResult[3]
+      Writing value of type 'Booking' as Json.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 10.5792ms
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Production
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /home/runner/work/dotnet-testing/dotnet-testing/src/BookingApp
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/bookings - application/json;+charset=utf-8 95
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Http.Result.CreatedResult[1]
+      Setting HTTP status code 201.
+info: Microsoft.AspNetCore.Http.Result.CreatedResult[3]
+      Writing value of type 'Booking' as Json.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 10.2833ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/bookings - application/json;+charset=utf-8 95
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Http.Result.CreatedResult[1]
+      Setting HTTP status code 201.
+info: Microsoft.AspNetCore.Http.Result.CreatedResult[3]
+      Writing value of type 'Booking' as Json.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 1.0012ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/bookings - application/json;+charset=utf-8 95
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Http.Result.CreatedResult[1]
+      Setting HTTP status code 201.
+info: Microsoft.AspNetCore.Http.Result.CreatedResult[3]
+      Writing value of type 'Booking' as Json.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 0.2585ms
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+
+  Passed starts exactly when the other ends → allowed [27 ms]
+  Passed overlaps the start → 409 [24 ms]
+  Passed overlaps the end → 409 [26 ms]
+  Passed inside the other → 409 [18 ms]
+  Passed covers the other → 409 [21 ms]
+  Passed the same slot → 409 [17 ms]
+  Passed yesterday → 400 [15 ms]
+  Passed today → 201 [16 ms]
+  Passed SameSlot_InAnotherRoom_OrOnAnotherDay_IsFine [18 ms]
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Production
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /home/runner/work/dotnet-testing/dotnet-testing/src/BookingApp
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost/ - - -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'HTTP: GET /'
+info: Microsoft.AspNetCore.Http.Result.ContentResult[2]
+      Write content with HTTP Response ContentType of text/html; charset=utf-8
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'HTTP: GET /'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://localhost/ - 200 5809 text/html;+charset=utf-8 12.0073ms
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Production
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /home/runner/work/dotnet-testing/dotnet-testing/src/BookingApp
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/bookings - application/json;+charset=utf-8 93
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/bookings - application/json;+charset=utf-8 93
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/bookings - application/json;+charset=utf-8 93
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/bookings - application/json;+charset=utf-8 93
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/bookings - application/json;+charset=utf-8 93
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/bookings - application/json;+charset=utf-8 93
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/bookings - application/json;+charset=utf-8 93
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/bookings - application/json;+charset=utf-8 93
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/bookings - application/json;+charset=utf-8 93
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/bookings - application/json;+charset=utf-8 93
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Http.Result.CreatedResult[1]
+      Setting HTTP status code 201.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Http.HttpResults.ProblemHttpResult[1]
+      Setting HTTP status code 409.
+info: Microsoft.AspNetCore.Http.HttpResults.ProblemHttpResult[1]
+      Setting HTTP status code 409.
+info: Microsoft.AspNetCore.Http.HttpResults.ProblemHttpResult[1]
+      Setting HTTP status code 409.
+info: Microsoft.AspNetCore.Http.Result.CreatedResult[3]
+      Writing value of type 'Booking' as Json.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 11.6730ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Http.HttpResults.ProblemHttpResult[1]
+      Setting HTTP status code 409.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 409 - application/problem+json 12.8365ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 409 - application/problem+json 14.4826ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 409 - application/problem+json 14.8056ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 409 - application/problem+json 14.6235ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Http.HttpResults.ProblemHttpResult[1]
+      Setting HTTP status code 409.
+info: Microsoft.AspNetCore.Http.HttpResults.ProblemHttpResult[1]
+      Setting HTTP status code 409.
+info: Microsoft.AspNetCore.Http.HttpResults.ProblemHttpResult[1]
+      Setting HTTP status code 409.
+info: Microsoft.AspNetCore.Http.HttpResults.ProblemHttpResult[1]
+      Setting HTTP status code 409.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 409 - application/problem+json 13.4410ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 409 - application/problem+json 13.4955ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 409 - application/problem+json 13.6036ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 409 - application/problem+json 13.6870ms
+info: Microsoft.AspNetCore.Http.HttpResults.ProblemHttpResult[1]
+      Setting HTTP status code 409.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 409 - application/problem+json 13.8855ms
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Production
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /home/runner/work/dotnet-testing/dotnet-testing/src/BookingApp
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/bookings - application/json;+charset=utf-8 95
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Http.HttpResults.ProblemHttpResult[1]
+      Setting HTTP status code 400.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 400 - application/problem+json 11.4468ms
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Production
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /home/runner/work/dotnet-testing/dotnet-testing/src/BookingApp
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/bookings - application/json;+charset=utf-8 95
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Http.Result.CreatedResult[1]
+      Setting HTTP status code 201.
+info: Microsoft.AspNetCore.Http.Result.CreatedResult[3]
+      Writing value of type 'Booking' as Json.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 10.5529ms
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Production
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /home/runner/work/dotnet-testing/dotnet-testing/src/BookingApp
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/bookings - application/json;+charset=utf-8 95
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Http.Result.CreatedResult[1]
+      Setting HTTP status code 201.
+info: Microsoft.AspNetCore.Http.Result.CreatedResult[3]
+      Writing value of type 'Booking' as Json.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 10.0957ms
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Production
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /home/runner/work/dotnet-testing/dotnet-testing/src/BookingApp
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/bookings - application/json;+charset=utf-8 95
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Http.HttpResults.ProblemHttpResult[1]
+      Setting HTTP status code 400.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 400 - application/problem+json 10.5899ms
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Production
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /home/runner/work/dotnet-testing/dotnet-testing/src/BookingApp
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/bookings - application/json;+charset=utf-8 95
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Http.Result.CreatedResult[1]
+      Setting HTTP status code 201.
+info: Microsoft.AspNetCore.Http.Result.CreatedResult[3]
+      Writing value of type 'Booking' as Json.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 10.0796ms
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Production
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /home/runner/work/dotnet-testing/dotnet-testing/src/BookingApp
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/bookings - application/json;+charset=utf-8 95
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Http.Result.CreatedResult[1]
+      Setting HTTP status code 201.
+info: Microsoft.AspNetCore.Http.Result.CreatedResult[3]
+      Writing value of type 'Booking' as Json.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 10.0090ms
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Production
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /home/runner/work/dotnet-testing/dotnet-testing/src/BookingApp
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/bookings - application/json;+charset=utf-8 95
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Http.HttpResults.ProblemHttpResult[1]
+      Setting HTTP status code 400.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 400 - application/problem+json 15.1226ms
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+
+  Passed SecurityHeaders [26 ms]
+  Passed TenPeople_BookTheSameSlot_AtOnce_OneWins [23 ms]
+  Passed TheClockDecidesWhatIsPast [17 ms]
+  Passed 15 minutes, the minimum → 201 [16 ms]
+  Passed 4 hours, the maximum → 201 [15 ms]
+  Passed 4 h 15 min → 400 [16 ms]
+  Passed from opening time → 201 [15 ms]
+  Passed until closing time → 201 [15 ms]
+  Passed starts before 08:00 → 400 [20 ms]
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Production
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /home/runner/work/dotnet-testing/dotnet-testing/src/BookingApp
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/bookings - application/json;+charset=utf-8 95
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Http.HttpResults.ProblemHttpResult[1]
+      Setting HTTP status code 400.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 400 - application/problem+json 10.7990ms
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Production
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /home/runner/work/dotnet-testing/dotnet-testing/src/BookingApp
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/bookings - application/json;+charset=utf-8 95
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Http.HttpResults.ProblemHttpResult[1]
+      Setting HTTP status code 400.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 400 - application/problem+json 10.2846ms
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Production
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /home/runner/work/dotnet-testing/dotnet-testing/src/BookingApp
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/bookings - application/json;+charset=utf-8 95
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Http.HttpResults.ProblemHttpResult[1]
+      Setting HTTP status code 400.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 400 - application/problem+json 10.4161ms
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Production
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /home/runner/work/dotnet-testing/dotnet-testing/src/BookingApp
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/bookings - application/json;+charset=utf-8 95
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Http.HttpResults.ProblemHttpResult[1]
+      Setting HTTP status code 400.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 400 - application/problem+json 10.4312ms
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Production
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /home/runner/work/dotnet-testing/dotnet-testing/src/BookingApp
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/bookings - application/json;+charset=utf-8 94
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Http.HttpResults.ProblemHttpResult[1]
+      Setting HTTP status code 400.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 400 - application/problem+json 14.0744ms
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Production
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /home/runner/work/dotnet-testing/dotnet-testing/src/BookingApp
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/bookings - application/json;+charset=utf-8 88
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Http.Result.CreatedResult[1]
+      Setting HTTP status code 201.
+info: Microsoft.AspNetCore.Http.Result.CreatedResult[3]
+      Writing value of type 'Booking' as Json.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 10.2870ms
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Production
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /home/runner/work/dotnet-testing/dotnet-testing/src/BookingApp
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/bookings - application/json;+charset=utf-8 187
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Http.Result.CreatedResult[1]
+      Setting HTTP status code 201.
+info: Microsoft.AspNetCore.Http.Result.CreatedResult[3]
+      Writing value of type 'Booking' as Json.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 9.8017ms
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Production
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /home/runner/work/dotnet-testing/dotnet-testing/src/BookingApp
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/bookings - application/json;+charset=utf-8 188
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Http.HttpResults.ProblemHttpResult[1]
+      Setting HTTP status code 400.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 400 - application/problem+json 10.0782ms
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Production
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /home/runner/work/dotnet-testing/dotnet-testing/src/BookingApp
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/bookings - application/json;+charset=utf-8 83
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Http.HttpResults.ProblemHttpResult[1]
+      Setting HTTP status code 400.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 400 - application/problem+json 10.0243ms
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+
+  Passed ends after 20:00 → 400 [16 ms]
+  Passed off the 15-minute grid → 400 [15 ms]
+  Passed ends before it starts → 400 [15 ms]
+  Passed zero length → 400 [15 ms]
+  Passed not HH:mm → 400 [19 ms]
+  Passed a 1-character title → 201 [15 ms]
+  Passed a 100-character title → 201 [14 ms]
+  Passed a 101-character title → 400 [14 ms]
+  Passed ValidationProblem_NamesEveryBadField [19 ms]
+Given today is 2026-10-01
+-> binding error: Binding error(s) found: 
+This Cucumber Expression has a problem at column 12:
+
+today is (\d{4}-\d{2}-\d{2})
+           ^
+Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+If you did mean to use an '\' you can use '\\' to escape it
+Given Tundra is booked on 2026-10-02 from 10:00 to 11:00 as "Planning"
+-> binding error: Binding error(s) found: 
+This Cucumber Expression has a problem at column 12:
+
+today is (\d{4}-\d{2}-\d{2})
+           ^
+Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+If you did mean to use an '\' you can use '\\' to escape it
+When I cancel "Planning"
+-> binding error: Binding error(s) found: 
+This Cucumber Expression has a problem at column 12:
+
+today is (\d{4}-\d{2}-\d{2})
+           ^
+Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+If you did mean to use an '\' you can use '\\' to escape it
+And I book Tundra on 2026-10-02 from 10:00 to 11:00 for 4 people as "Replanning"
+-> binding error: Binding error(s) found: 
+This Cucumber Expression has a problem at column 12:
+
+today is (\d{4}-\d{2}-\d{2})
+           ^
+Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+If you did mean to use an '\' you can use '\\' to escape it
+Then the booking is confirmed
+-> binding error: Binding error(s) found: 
+This Cucumber Expression has a problem at column 12:
+
+today is (\d{4}-\d{2}-\d{2})
+           ^
+Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+If you did mean to use an '\' you can use '\\' to escape it
+
+Given today is 2026-10-01
+-> binding error: Binding error(s) found: 
+This Cucumber Expression has a problem at column 12:
+
+today is (\d{4}-\d{2}-\d{2})
+           ^
+Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+If you did mean to use an '\' you can use '\\' to escape it
+When I book Tundra on 2026-10-02 from 10:00 to 11:00 for 4 people as "Planning"
+-> binding error: Binding error(s) found: 
+This Cucumber Expression has a problem at column 12:
+
+today is (\d{4}-\d{2}-\d{2})
+           ^
+Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+If you did mean to use an '\' you can use '\\' to escape it
+Then the booking is confirmed
+-> binding error: Binding error(s) found: 
+This Cucumber Expression has a problem at column 12:
+
+today is (\d{4}-\d{2}-\d{2})
+           ^
+Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+If you did mean to use an '\' you can use '\\' to escape it
+And Tundra on 2026-10-02 has these bookings:
+  --- table step argument ---
+  | start | end   | title    |
+  | 10:00 | 11:00 | Planning |
+-> binding error: Binding error(s) found: 
+This Cucumber Expression has a problem at column 12:
+
+today is (\d{4}-\d{2}-\d{2})
+           ^
+Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+If you did mean to use an '\' you can use '\\' to escape it
+
+Given today is 2026-10-01
+-> binding error: Binding error(s) found: 
+This Cucumber Expression has a problem at column 12:
+
+today is (\d{4}-\d{2}-\d{2})
+           ^
+Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+If you did mean to use an '\' you can use '\\' to escape it
+Given Tundra is booked on 2026-10-02 from 10:00 to 11:00 as "Planning"
+-> binding error: Binding error(s) found: 
+This Cucumber Expression has a problem at column 12:
+
+today is (\d{4}-\d{2}-\d{2})
+           ^
+Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+If you did mean to use an '\' you can use '\\' to escape it
+When I book Tundra on 2026-10-02 from 11:00 to 12:00 for 4 people as "Review"
+-> binding error: Binding error(s) found: 
+This Cucumber Expression has a problem at column 12:
+
+today is (\d{4}-\d{2}-\d{2})
+           ^
+Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+If you did mean to use an '\' you can use '\\' to escape it
+Then the booking is confirmed
+-> binding error: Binding error(s) found: 
+This Cucumber Expression has a problem at column 12:
+
+today is (\d{4}-\d{2}-\d{2})
+           ^
+Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+If you did mean to use an '\' you can use '\\' to escape it
+When I book Tundra on 2026-10-02 from 11:30 to 12:30 for 4 people as "Standup"
+-> binding error: Binding error(s) found: 
+This Cucumber Expression has a problem at column 12:
+
+today is (\d{4}-\d{2}-\d{2})
+           ^
+Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+If you did mean to use an '\' you can use '\\' to escape it
+Then the booking is refused because the room is taken by "Review"
+-> binding error: Binding error(s) found: 
+This Cucumber Expression has a problem at column 12:
+
+today is (\d{4}-\d{2}-\d{2})
+           ^
+Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+If you did mean to use an '\' you can use '\\' to escape it
+
+Given today is 2026-10-01
+-> binding error: Binding error(s) found: 
+This Cucumber Expression has a problem at column 12:
+
+today is (\d{4}-\d{2}-\d{2})
+           ^
+Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+If you did mean to use an '\' you can use '\\' to escape it
+When I book Aurora on 2026-10-02 from 08:00 to 08:15 for 4 people as "Workshop"
+-> binding error: Binding error(s) found: 
+This Cucumber Expression has a problem at column 12:
+
+today is (\d{4}-\d{2}-\d{2})
+           ^
+Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+If you did mean to use an '\' you can use '\\' to escape it
+Then the answer is 201
+-> binding error: Binding error(s) found: 
+This Cucumber Expression has a problem at column 12:
+
+today is (\d{4}-\d{2}-\d{2})
+           ^
+Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+If you did mean to use an '\' you can use '\\' to escape it
+
+Given today is 2026-10-01
+-> binding error: Binding error(s) found: 
+This Cucumber Expression has a problem at column 12:
+
+today is (\d{4}-\d{2}-\d{2})
+           ^
+Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+If you did mean to use an '\' you can use '\\' to escape it
+When I book Aurora on 2026-10-02 from 07:45 to 08:15 for 4 people as "Workshop"
+-> binding error: Binding error(s) found: 
+This Cucumber Expression has a problem at column 12:
+
+today is (\d{4}-\d{2}-\d{2})
+           ^
+Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+If you did mean to use an '\' you can use '\\' to escape it
+Then the answer is 400
+-> binding error: Binding error(s) found: 
+This Cucumber Expression has a problem at column 12:
+
+today is (\d{4}-\d{2}-\d{2})
+           ^
+Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+If you did mean to use an '\' you can use '\\' to escape it
+
+Given today is 2026-10-01
+-> binding error: Binding error(s) found: 
+This Cucumber Expression has a problem at column 12:
+
+today is (\d{4}-\d{2}-\d{2})
+           ^
+Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+If you did mean to use an '\' you can use '\\' to escape it
+When I book Aurora on 2026-10-02 from 16:00 to 20:00 for 4 people as "Workshop"
+-> binding error: Binding error(s) found: 
+This Cucumber Expression has a problem at column 12:
+
+today is (\d{4}-\d{2}-\d{2})
+           ^
+Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+If you did mean to use an '\' you can use '\\' to escape it
+Then the answer is 201
+-> binding error: Binding error(s) found: 
+This Cucumber Expression has a problem at column 12:
+
+today is (\d{4}-\d{2}-\d{2})
+           ^
+Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+If you did mean to use an '\' you can use '\\' to escape it
+
+Given today is 2026-10-01
+-> binding error: Binding error(s) found: 
+This Cucumber Expression has a problem at column 12:
+
+today is (\d{4}-\d{2}-\d{2})
+           ^
+Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+If you did mean to use an '\' you can use '\\' to escape it
+When I book Aurora on 2026-10-02 from 16:00 to 20:15 for 4 people as "Workshop"
+-> binding error: Binding error(s) found: 
+This Cucumber Expression has a problem at column 12:
+
+today is (\d{4}-\d{2}-\d{2})
+           ^
+Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+If you did mean to use an '\' you can use '\\' to escape it
+Then the answer is 400
+-> binding error: Binding error(s) found: 
+This Cucumber Expression has a problem at column 12:
+
+today is (\d{4}-\d{2}-\d{2})
+           ^
+Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+If you did mean to use an '\' you can use '\\' to escape it
+
+Given today is 2026-10-01
+-> binding error: Binding error(s) found: 
+This Cucumber Expression has a problem at column 12:
+
+today is (\d{4}-\d{2}-\d{2})
+           ^
+Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+If you did mean to use an '\' you can use '\\' to escape it
+When I book Aurora on 2026-10-02 from 09:00 to 13:15 for 4 people as "Workshop"
+-> binding error: Binding error(s) found: 
+This Cucumber Expression has a problem at column 12:
+
+today is (\d{4}-\d{2}-\d{2})
+           ^
+Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+If you did mean to use an '\' you can use '\\' to escape it
+Then the answer is 400
+-> binding error: Binding error(s) found: 
+This Cucumber Expression has a problem at column 12:
+
+today is (\d{4}-\d{2}-\d{2})
+           ^
+Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+If you did mean to use an '\' you can use '\\' to escape it
+
+Given today is 2026-10-01
+-> binding error: Binding error(s) found: 
+This Cucumber Expression has a problem at column 12:
+
+today is (\d{4}-\d{2}-\d{2})
+           ^
+Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+If you did mean to use an '\' you can use '\\' to escape it
+When I book Aurora on 2026-10-02 from 09:10 to 10:00 for 4 people as "Workshop"
+-> binding error: Binding error(s) found: 
+This Cucumber Expression has a problem at column 12:
+
+today is (\d{4}-\d{2}-\d{2})
+           ^
+Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+If you did mean to use an '\' you can use '\\' to escape it
+Then the answer is 400
+-> binding error: Binding error(s) found: 
+This Cucumber Expression has a problem at column 12:
+
+today is (\d{4}-\d{2}-\d{2})
+           ^
+Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+If you did mean to use an '\' you can use '\\' to escape it
+
+  Failed ACancelledSlotCanBeBookedAgain [30 ms]
+  Error Message:
+   Reqnroll.BindingException : Binding error(s) found: 
+This Cucumber Expression has a problem at column 12:
+
+today is (\d{4}-\d{2}-\d{2})
+           ^
+Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+If you did mean to use an '\' you can use '\\' to escape it
+  Stack Trace:
+     at Reqnroll.ErrorHandling.ErrorProvider.GetInvalidBindingRegistryError(IEnumerable`1 errors)
+   at Reqnroll.Infrastructure.TestExecutionEngine.GetStepMatch(StepInstance stepInstance)
+   at Reqnroll.Infrastructure.TestExecutionEngine.ExecuteStepAsync(IContextManager contextManager, StepInstance stepInstance)
+   at Reqnroll.Infrastructure.TestExecutionEngine.OnAfterLastStepAsync()
+   at Reqnroll.TestRunner.CollectScenarioErrorsAsync()
+   at BookingApp.Tests.Features.BookingMeetingRoomsFeature.ScenarioCleanupAsync()
+   at BookingApp.Tests.Features.BookingMeetingRoomsFeature.ACancelledSlotCanBeBookedAgain() in /home/runner/work/dotnet-testing/dotnet-testing/tests/BookingApp.Tests/Features/Booking.feature:line 50
+   at NUnit.Framework.Internal.TaskAwaitAdapter.GenericAdapter`1.GetResult()
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await[TResult](TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await(TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.RunTestMethod(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.Execute(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand.<>c__DisplayClass1_0.<Execute>b__0()
+   at NUnit.Framework.Internal.Commands.DelegatingTestCommand.RunTestMethodInThreadAbortSafeZone(TestExecutionContext context, Action action)
+
+  Standard Output Messages:
+ Given today is 2026-10-01
+ -> binding error: Binding error(s) found: 
+ This Cucumber Expression has a problem at column 12:
+ 
+ today is (\d{4}-\d{2}-\d{2})
+            ^
+ Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+ If you did mean to use an '\' you can use '\\' to escape it
+ Given Tundra is booked on 2026-10-02 from 10:00 to 11:00 as "Planning"
+ -> binding error: Binding error(s) found: 
+ This Cucumber Expression has a problem at column 12:
+ 
+ today is (\d{4}-\d{2}-\d{2})
+            ^
+ Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+ If you did mean to use an '\' you can use '\\' to escape it
+ When I cancel "Planning"
+ -> binding error: Binding error(s) found: 
+ This Cucumber Expression has a problem at column 12:
+ 
+ today is (\d{4}-\d{2}-\d{2})
+            ^
+ Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+ If you did mean to use an '\' you can use '\\' to escape it
+ And I book Tundra on 2026-10-02 from 10:00 to 11:00 for 4 people as "Replanning"
+ -> binding error: Binding error(s) found: 
+ This Cucumber Expression has a problem at column 12:
+ 
+ today is (\d{4}-\d{2}-\d{2})
+            ^
+ Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+ If you did mean to use an '\' you can use '\\' to escape it
+ Then the booking is confirmed
+ -> binding error: Binding error(s) found: 
+ This Cucumber Expression has a problem at column 12:
+ 
+ today is (\d{4}-\d{2}-\d{2})
+            ^
+ Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+ If you did mean to use an '\' you can use '\\' to escape it
+
+
+  Failed AFreeSlotIsBooked [10 ms]
+  Error Message:
+   Reqnroll.BindingException : Binding error(s) found: 
+This Cucumber Expression has a problem at column 12:
+
+today is (\d{4}-\d{2}-\d{2})
+           ^
+Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+If you did mean to use an '\' you can use '\\' to escape it
+  Stack Trace:
+     at Reqnroll.ErrorHandling.ErrorProvider.GetInvalidBindingRegistryError(IEnumerable`1 errors)
+   at Reqnroll.Infrastructure.TestExecutionEngine.GetStepMatch(StepInstance stepInstance)
+   at Reqnroll.Infrastructure.TestExecutionEngine.ExecuteStepAsync(IContextManager contextManager, StepInstance stepInstance)
+   at Reqnroll.Infrastructure.TestExecutionEngine.OnAfterLastStepAsync()
+   at Reqnroll.TestRunner.CollectScenarioErrorsAsync()
+   at BookingApp.Tests.Features.BookingMeetingRoomsFeature.ScenarioCleanupAsync()
+   at BookingApp.Tests.Features.BookingMeetingRoomsFeature.AFreeSlotIsBooked() in /home/runner/work/dotnet-testing/dotnet-testing/tests/BookingApp.Tests/Features/Booking.feature:line 11
+   at NUnit.Framework.Internal.TaskAwaitAdapter.GenericAdapter`1.GetResult()
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await[TResult](TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await(TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.RunTestMethod(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.Execute(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand.<>c__DisplayClass1_0.<Execute>b__0()
+   at NUnit.Framework.Internal.Commands.DelegatingTestCommand.RunTestMethodInThreadAbortSafeZone(TestExecutionContext context, Action action)
+
+  Standard Output Messages:
+ Given today is 2026-10-01
+ -> binding error: Binding error(s) found: 
+ This Cucumber Expression has a problem at column 12:
+ 
+ today is (\d{4}-\d{2}-\d{2})
+            ^
+ Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+ If you did mean to use an '\' you can use '\\' to escape it
+ When I book Tundra on 2026-10-02 from 10:00 to 11:00 for 4 people as "Planning"
+ -> binding error: Binding error(s) found: 
+ This Cucumber Expression has a problem at column 12:
+ 
+ today is (\d{4}-\d{2}-\d{2})
+            ^
+ Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+ If you did mean to use an '\' you can use '\\' to escape it
+ Then the booking is confirmed
+ -> binding error: Binding error(s) found: 
+ This Cucumber Expression has a problem at column 12:
+ 
+ today is (\d{4}-\d{2}-\d{2})
+            ^
+ Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+ If you did mean to use an '\' you can use '\\' to escape it
+ And Tundra on 2026-10-02 has these bookings:
+   --- table step argument ---
+   | start | end   | title    |
+   | 10:00 | 11:00 | Planning |
+ -> binding error: Binding error(s) found: 
+ This Cucumber Expression has a problem at column 12:
+ 
+ today is (\d{4}-\d{2}-\d{2})
+            ^
+ Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+ If you did mean to use an '\' you can use '\\' to escape it
+
+
+  Failed Back_To_BackMeetingsAreFineOverlappingOnesAreNot [1 ms]
+  Error Message:
+   Reqnroll.BindingException : Binding error(s) found: 
+This Cucumber Expression has a problem at column 12:
+
+today is (\d{4}-\d{2}-\d{2})
+           ^
+Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+If you did mean to use an '\' you can use '\\' to escape it
+  Stack Trace:
+     at Reqnroll.ErrorHandling.ErrorProvider.GetInvalidBindingRegistryError(IEnumerable`1 errors)
+   at Reqnroll.Infrastructure.TestExecutionEngine.GetStepMatch(StepInstance stepInstance)
+   at Reqnroll.Infrastructure.TestExecutionEngine.ExecuteStepAsync(IContextManager contextManager, StepInstance stepInstance)
+   at Reqnroll.Infrastructure.TestExecutionEngine.OnAfterLastStepAsync()
+   at Reqnroll.TestRunner.CollectScenarioErrorsAsync()
+   at BookingApp.Tests.Features.BookingMeetingRoomsFeature.ScenarioCleanupAsync()
+   at BookingApp.Tests.Features.BookingMeetingRoomsFeature.Back_To_BackMeetingsAreFineOverlappingOnesAreNot() in /home/runner/work/dotnet-testing/dotnet-testing/tests/BookingApp.Tests/Features/Booking.feature:line 20
+   at NUnit.Framework.Internal.TaskAwaitAdapter.GenericAdapter`1.GetResult()
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await[TResult](TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await(TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.RunTestMethod(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.Execute(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand.<>c__DisplayClass1_0.<Execute>b__0()
+   at NUnit.Framework.Internal.Commands.DelegatingTestCommand.RunTestMethodInThreadAbortSafeZone(TestExecutionContext context, Action action)
+
+  Standard Output Messages:
+ Given today is 2026-10-01
+ -> binding error: Binding error(s) found: 
+ This Cucumber Expression has a problem at column 12:
+ 
+ today is (\d{4}-\d{2}-\d{2})
+            ^
+ Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+ If you did mean to use an '\' you can use '\\' to escape it
+ Given Tundra is booked on 2026-10-02 from 10:00 to 11:00 as "Planning"
+ -> binding error: Binding error(s) found: 
+ This Cucumber Expression has a problem at column 12:
+ 
+ today is (\d{4}-\d{2}-\d{2})
+            ^
+ Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+ If you did mean to use an '\' you can use '\\' to escape it
+ When I book Tundra on 2026-10-02 from 11:00 to 12:00 for 4 people as "Review"
+ -> binding error: Binding error(s) found: 
+ This Cucumber Expression has a problem at column 12:
+ 
+ today is (\d{4}-\d{2}-\d{2})
+            ^
+ Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+ If you did mean to use an '\' you can use '\\' to escape it
+ Then the booking is confirmed
+ -> binding error: Binding error(s) found: 
+ This Cucumber Expression has a problem at column 12:
+ 
+ today is (\d{4}-\d{2}-\d{2})
+            ^
+ Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+ If you did mean to use an '\' you can use '\\' to escape it
+ When I book Tundra on 2026-10-02 from 11:30 to 12:30 for 4 people as "Standup"
+ -> binding error: Binding error(s) found: 
+ This Cucumber Expression has a problem at column 12:
+ 
+ today is (\d{4}-\d{2}-\d{2})
+            ^
+ Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+ If you did mean to use an '\' you can use '\\' to escape it
+ Then the booking is refused because the room is taken by "Review"
+ -> binding error: Binding error(s) found: 
+ This Cucumber Expression has a problem at column 12:
+ 
+ today is (\d{4}-\d{2}-\d{2})
+            ^
+ Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+ If you did mean to use an '\' you can use '\\' to escape it
+
+
+  Failed OpeningHoursAndLength("08:00","08:15","201",null) [1 ms]
+  Error Message:
+   Reqnroll.BindingException : Binding error(s) found: 
+This Cucumber Expression has a problem at column 12:
+
+today is (\d{4}-\d{2}-\d{2})
+           ^
+Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+If you did mean to use an '\' you can use '\\' to escape it
+  Stack Trace:
+     at Reqnroll.ErrorHandling.ErrorProvider.GetInvalidBindingRegistryError(IEnumerable`1 errors)
+   at Reqnroll.Infrastructure.TestExecutionEngine.GetStepMatch(StepInstance stepInstance)
+   at Reqnroll.Infrastructure.TestExecutionEngine.ExecuteStepAsync(IContextManager contextManager, StepInstance stepInstance)
+   at Reqnroll.Infrastructure.TestExecutionEngine.OnAfterLastStepAsync()
+   at Reqnroll.TestRunner.CollectScenarioErrorsAsync()
+   at BookingApp.Tests.Features.BookingMeetingRoomsFeature.ScenarioCleanupAsync()
+   at BookingApp.Tests.Features.BookingMeetingRoomsFeature.OpeningHoursAndLength(String start, String end, String status, String[] exampleTags) in /home/runner/work/dotnet-testing/dotnet-testing/tests/BookingApp.Tests/Features/Booking.feature:line 24
+   at NUnit.Framework.Internal.TaskAwaitAdapter.GenericAdapter`1.GetResult()
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await[TResult](TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await(TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.RunTestMethod(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.Execute(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand.<>c__DisplayClass1_0.<Execute>b__0()
+   at NUnit.Framework.Internal.Commands.DelegatingTestCommand.RunTestMethodInThreadAbortSafeZone(TestExecutionContext context, Action action)
+
+  Standard Output Messages:
+ Given today is 2026-10-01
+ -> binding error: Binding error(s) found: 
+ This Cucumber Expression has a problem at column 12:
+ 
+ today is (\d{4}-\d{2}-\d{2})
+            ^
+ Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+ If you did mean to use an '\' you can use '\\' to escape it
+ When I book Aurora on 2026-10-02 from 08:00 to 08:15 for 4 people as "Workshop"
+ -> binding error: Binding error(s) found: 
+ This Cucumber Expression has a problem at column 12:
+ 
+ today is (\d{4}-\d{2}-\d{2})
+            ^
+ Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+ If you did mean to use an '\' you can use '\\' to escape it
+ Then the answer is 201
+ -> binding error: Binding error(s) found: 
+ This Cucumber Expression has a problem at column 12:
+ 
+ today is (\d{4}-\d{2}-\d{2})
+            ^
+ Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+ If you did mean to use an '\' you can use '\\' to escape it
+
+
+  Failed OpeningHoursAndLength("07:45","08:15","400",null) [1 ms]
+  Error Message:
+   Reqnroll.BindingException : Binding error(s) found: 
+This Cucumber Expression has a problem at column 12:
+
+today is (\d{4}-\d{2}-\d{2})
+           ^
+Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+If you did mean to use an '\' you can use '\\' to escape it
+  Stack Trace:
+     at Reqnroll.ErrorHandling.ErrorProvider.GetInvalidBindingRegistryError(IEnumerable`1 errors)
+   at Reqnroll.Infrastructure.TestExecutionEngine.GetStepMatch(StepInstance stepInstance)
+   at Reqnroll.Infrastructure.TestExecutionEngine.ExecuteStepAsync(IContextManager contextManager, StepInstance stepInstance)
+   at Reqnroll.Infrastructure.TestExecutionEngine.OnAfterLastStepAsync()
+   at Reqnroll.TestRunner.CollectScenarioErrorsAsync()
+   at BookingApp.Tests.Features.BookingMeetingRoomsFeature.ScenarioCleanupAsync()
+   at BookingApp.Tests.Features.BookingMeetingRoomsFeature.OpeningHoursAndLength(String start, String end, String status, String[] exampleTags) in /home/runner/work/dotnet-testing/dotnet-testing/tests/BookingApp.Tests/Features/Booking.feature:line 24
+   at NUnit.Framework.Internal.TaskAwaitAdapter.GenericAdapter`1.GetResult()
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await[TResult](TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await(TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.RunTestMethod(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.Execute(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand.<>c__DisplayClass1_0.<Execute>b__0()
+   at NUnit.Framework.Internal.Commands.DelegatingTestCommand.RunTestMethodInThreadAbortSafeZone(TestExecutionContext context, Action action)
+
+  Standard Output Messages:
+ Given today is 2026-10-01
+ -> binding error: Binding error(s) found: 
+ This Cucumber Expression has a problem at column 12:
+ 
+ today is (\d{4}-\d{2}-\d{2})
+            ^
+ Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+ If you did mean to use an '\' you can use '\\' to escape it
+ When I book Aurora on 2026-10-02 from 07:45 to 08:15 for 4 people as "Workshop"
+ -> binding error: Binding error(s) found: 
+ This Cucumber Expression has a problem at column 12:
+ 
+ today is (\d{4}-\d{2}-\d{2})
+            ^
+ Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+ If you did mean to use an '\' you can use '\\' to escape it
+ Then the answer is 400
+ -> binding error: Binding error(s) found: 
+ This Cucumber Expression has a problem at column 12:
+ 
+ today is (\d{4}-\d{2}-\d{2})
+            ^
+ Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+ If you did mean to use an '\' you can use '\\' to escape it
+
+
+  Failed OpeningHoursAndLength("16:00","20:00","201",null) [< 1 ms]
+  Error Message:
+   Reqnroll.BindingException : Binding error(s) found: 
+This Cucumber Expression has a problem at column 12:
+
+today is (\d{4}-\d{2}-\d{2})
+           ^
+Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+If you did mean to use an '\' you can use '\\' to escape it
+  Stack Trace:
+     at Reqnroll.ErrorHandling.ErrorProvider.GetInvalidBindingRegistryError(IEnumerable`1 errors)
+   at Reqnroll.Infrastructure.TestExecutionEngine.GetStepMatch(StepInstance stepInstance)
+   at Reqnroll.Infrastructure.TestExecutionEngine.ExecuteStepAsync(IContextManager contextManager, StepInstance stepInstance)
+   at Reqnroll.Infrastructure.TestExecutionEngine.OnAfterLastStepAsync()
+   at Reqnroll.TestRunner.CollectScenarioErrorsAsync()
+   at BookingApp.Tests.Features.BookingMeetingRoomsFeature.ScenarioCleanupAsync()
+   at BookingApp.Tests.Features.BookingMeetingRoomsFeature.OpeningHoursAndLength(String start, String end, String status, String[] exampleTags) in /home/runner/work/dotnet-testing/dotnet-testing/tests/BookingApp.Tests/Features/Booking.feature:line 24
+   at NUnit.Framework.Internal.TaskAwaitAdapter.GenericAdapter`1.GetResult()
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await[TResult](TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await(TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.RunTestMethod(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.Execute(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand.<>c__DisplayClass1_0.<Execute>b__0()
+   at NUnit.Framework.Internal.Commands.DelegatingTestCommand.RunTestMethodInThreadAbortSafeZone(TestExecutionContext context, Action action)
+
+  Standard Output Messages:
+ Given today is 2026-10-01
+ -> binding error: Binding error(s) found: 
+ This Cucumber Expression has a problem at column 12:
+ 
+ today is (\d{4}-\d{2}-\d{2})
+            ^
+ Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+ If you did mean to use an '\' you can use '\\' to escape it
+ When I book Aurora on 2026-10-02 from 16:00 to 20:00 for 4 people as "Workshop"
+ -> binding error: Binding error(s) found: 
+ This Cucumber Expression has a problem at column 12:
+ 
+ today is (\d{4}-\d{2}-\d{2})
+            ^
+ Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+ If you did mean to use an '\' you can use '\\' to escape it
+ Then the answer is 201
+ -> binding error: Binding error(s) found: 
+ This Cucumber Expression has a problem at column 12:
+ 
+ today is (\d{4}-\d{2}-\d{2})
+            ^
+ Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+ If you did mean to use an '\' you can use '\\' to escape it
+
+
+  Failed OpeningHoursAndLength("16:00","20:15","400",null) [< 1 ms]
+  Error Message:
+   Reqnroll.BindingException : Binding error(s) found: 
+This Cucumber Expression has a problem at column 12:
+
+today is (\d{4}-\d{2}-\d{2})
+           ^
+Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+If you did mean to use an '\' you can use '\\' to escape it
+  Stack Trace:
+     at Reqnroll.ErrorHandling.ErrorProvider.GetInvalidBindingRegistryError(IEnumerable`1 errors)
+   at Reqnroll.Infrastructure.TestExecutionEngine.GetStepMatch(StepInstance stepInstance)
+   at Reqnroll.Infrastructure.TestExecutionEngine.ExecuteStepAsync(IContextManager contextManager, StepInstance stepInstance)
+   at Reqnroll.Infrastructure.TestExecutionEngine.OnAfterLastStepAsync()
+   at Reqnroll.TestRunner.CollectScenarioErrorsAsync()
+   at BookingApp.Tests.Features.BookingMeetingRoomsFeature.ScenarioCleanupAsync()
+   at BookingApp.Tests.Features.BookingMeetingRoomsFeature.OpeningHoursAndLength(String start, String end, String status, String[] exampleTags) in /home/runner/work/dotnet-testing/dotnet-testing/tests/BookingApp.Tests/Features/Booking.feature:line 24
+   at NUnit.Framework.Internal.TaskAwaitAdapter.GenericAdapter`1.GetResult()
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await[TResult](TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await(TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.RunTestMethod(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.Execute(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand.<>c__DisplayClass1_0.<Execute>b__0()
+   at NUnit.Framework.Internal.Commands.DelegatingTestCommand.RunTestMethodInThreadAbortSafeZone(TestExecutionContext context, Action action)
+
+  Standard Output Messages:
+ Given today is 2026-10-01
+ -> binding error: Binding error(s) found: 
+ This Cucumber Expression has a problem at column 12:
+ 
+ today is (\d{4}-\d{2}-\d{2})
+            ^
+ Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+ If you did mean to use an '\' you can use '\\' to escape it
+ When I book Aurora on 2026-10-02 from 16:00 to 20:15 for 4 people as "Workshop"
+ -> binding error: Binding error(s) found: 
+ This Cucumber Expression has a problem at column 12:
+ 
+ today is (\d{4}-\d{2}-\d{2})
+            ^
+ Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+ If you did mean to use an '\' you can use '\\' to escape it
+ Then the answer is 400
+ -> binding error: Binding error(s) found: 
+ This Cucumber Expression has a problem at column 12:
+ 
+ today is (\d{4}-\d{2}-\d{2})
+            ^
+ Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+ If you did mean to use an '\' you can use '\\' to escape it
+
+
+  Failed OpeningHoursAndLength("09:00","13:15","400",null) [< 1 ms]
+  Error Message:
+   Reqnroll.BindingException : Binding error(s) found: 
+This Cucumber Expression has a problem at column 12:
+
+today is (\d{4}-\d{2}-\d{2})
+           ^
+Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+If you did mean to use an '\' you can use '\\' to escape it
+  Stack Trace:
+     at Reqnroll.ErrorHandling.ErrorProvider.GetInvalidBindingRegistryError(IEnumerable`1 errors)
+   at Reqnroll.Infrastructure.TestExecutionEngine.GetStepMatch(StepInstance stepInstance)
+   at Reqnroll.Infrastructure.TestExecutionEngine.ExecuteStepAsync(IContextManager contextManager, StepInstance stepInstance)
+   at Reqnroll.Infrastructure.TestExecutionEngine.OnAfterLastStepAsync()
+   at Reqnroll.TestRunner.CollectScenarioErrorsAsync()
+   at BookingApp.Tests.Features.BookingMeetingRoomsFeature.ScenarioCleanupAsync()
+   at BookingApp.Tests.Features.BookingMeetingRoomsFeature.OpeningHoursAndLength(String start, String end, String status, String[] exampleTags) in /home/runner/work/dotnet-testing/dotnet-testing/tests/BookingApp.Tests/Features/Booking.feature:line 24
+   at NUnit.Framework.Internal.TaskAwaitAdapter.GenericAdapter`1.GetResult()
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await[TResult](TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await(TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.RunTestMethod(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.Execute(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand.<>c__DisplayClass1_0.<Execute>b__0()
+   at NUnit.Framework.Internal.Commands.DelegatingTestCommand.RunTestMethodInThreadAbortSafeZone(TestExecutionContext context, Action action)
+
+  Standard Output Messages:
+ Given today is 2026-10-01
+ -> binding error: Binding error(s) found: 
+ This Cucumber Expression has a problem at column 12:
+ 
+ today is (\d{4}-\d{2}-\d{2})
+            ^
+ Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+ If you did mean to use an '\' you can use '\\' to escape it
+ When I book Aurora on 2026-10-02 from 09:00 to 13:15 for 4 people as "Workshop"
+ -> binding error: Binding error(s) found: 
+ This Cucumber Expression has a problem at column 12:
+ 
+ today is (\d{4}-\d{2}-\d{2})
+            ^
+ Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+ If you did mean to use an '\' you can use '\\' to escape it
+ Then the answer is 400
+ -> binding error: Binding error(s) found: 
+ This Cucumber Expression has a problem at column 12:
+ 
+ today is (\d{4}-\d{2}-\d{2})
+            ^
+ Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+ If you did mean to use an '\' you can use '\\' to escape it
+
+
+  Failed OpeningHoursAndLength("09:10","10:00","400",null) [< 1 ms]
+  Error Message:
+   Reqnroll.BindingException : Binding error(s) found: 
+This Cucumber Expression has a problem at column 12:
+
+today is (\d{4}-\d{2}-\d{2})
+           ^
+Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+If you did mean to use an '\' you can use '\\' to escape it
+  Stack Trace:
+     at Reqnroll.ErrorHandling.ErrorProvider.GetInvalidBindingRegistryError(IEnumerable`1 errors)
+   at Reqnroll.Infrastructure.TestExecutionEngine.GetStepMatch(StepInstance stepInstance)
+   at Reqnroll.Infrastructure.TestExecutionEngine.ExecuteStepAsync(IContextManager contextManager, StepInstance stepInstance)
+   at Reqnroll.Infrastructure.TestExecutionEngine.OnAfterLastStepAsync()
+   at Reqnroll.TestRunner.CollectScenarioErrorsAsync()
+   at BookingApp.Tests.Features.BookingMeetingRoomsFeature.ScenarioCleanupAsync()
+   at BookingApp.Tests.Features.BookingMeetingRoomsFeature.OpeningHoursAndLength(String start, String end, String status, String[] exampleTags) in /home/runner/work/dotnet-testing/dotnet-testing/tests/BookingApp.Tests/Features/Booking.feature:line 24
+   at NUnit.Framework.Internal.TaskAwaitAdapter.GenericAdapter`1.GetResult()
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await[TResult](TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await(TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.RunTestMethod(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.Execute(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand.<>c__DisplayClass1_0.<Execute>b__0()
+   at NUnit.Framework.Internal.Commands.DelegatingTestCommand.RunTestMethodInThreadAbortSafeZone(TestExecutionContext context, Action action)
+
+  Standard Output Messages:
+ Given today is 2026-10-01
+ -> binding error: Binding error(s) found: 
+ This Cucumber Expression has a problem at column 12:
+ 
+ today is (\d{4}-\d{2}-\d{2})
+            ^
+ Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+ If you did mean to use an '\' you can use '\\' to escape it
+ When I book Aurora on 2026-10-02 from 09:10 to 10:00 for 4 people as "Workshop"
+ -> binding error: Binding error(s) found: 
+ This Cucumber Expression has a problem at column 12:
+ 
+ today is (\d{4}-\d{2}-\d{2})
+            ^
+ Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+ If you did mean to use an '\' you can use '\\' to escape it
+ Then the answer is 400
+ -> binding error: Binding error(s) found: 
+ This Cucumber Expression has a problem at column 12:
+ 
+ today is (\d{4}-\d{2}-\d{2})
+            ^
+ Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+ If you did mean to use an '\' you can use '\\' to escape it
+
+
+Given today is 2026-10-01
+-> binding error: Binding error(s) found: 
+This Cucumber Expression has a problem at column 12:
+
+today is (\d{4}-\d{2}-\d{2})
+           ^
+Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+If you did mean to use an '\' you can use '\\' to escape it
+When I book Fjord on 2026-10-02 from 10:00 to 11:00 for 5 people as "All hands"
+-> binding error: Binding error(s) found: 
+This Cucumber Expression has a problem at column 12:
+
+today is (\d{4}-\d{2}-\d{2})
+           ^
+Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+If you did mean to use an '\' you can use '\\' to escape it
+Then the booking is refused with "Fjord seats 4."
+-> binding error: Binding error(s) found: 
+This Cucumber Expression has a problem at column 12:
+
+today is (\d{4}-\d{2}-\d{2})
+           ^
+Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+If you did mean to use an '\' you can use '\\' to escape it
+
+Given today is 2026-10-01
+-> binding error: Binding error(s) found: 
+This Cucumber Expression has a problem at column 12:
+
+today is (\d{4}-\d{2}-\d{2})
+           ^
+Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+If you did mean to use an '\' you can use '\\' to escape it
+When I book Tundra on 2026-09-30 from 10:00 to 11:00 for 2 people as "Too late"
+-> binding error: Binding error(s) found: 
+This Cucumber Expression has a problem at column 12:
+
+today is (\d{4}-\d{2}-\d{2})
+           ^
+Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+If you did mean to use an '\' you can use '\\' to escape it
+Then the answer is 400
+-> binding error: Binding error(s) found: 
+This Cucumber Expression has a problem at column 12:
+
+today is (\d{4}-\d{2}-\d{2})
+           ^
+Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+If you did mean to use an '\' you can use '\\' to escape it
+Given today is 2026-10-03
+-> binding error: Binding error(s) found: 
+This Cucumber Expression has a problem at column 12:
+
+today is (\d{4}-\d{2}-\d{2})
+           ^
+Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+If you did mean to use an '\' you can use '\\' to escape it
+When I book Tundra on 2026-10-02 from 10:00 to 11:00 for 2 people as "Also too late"
+-> binding error: Binding error(s) found: 
+This Cucumber Expression has a problem at column 12:
+
+today is (\d{4}-\d{2}-\d{2})
+           ^
+Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+If you did mean to use an '\' you can use '\\' to escape it
+Then the answer is 400
+-> binding error: Binding error(s) found: 
+This Cucumber Expression has a problem at column 12:
+
+today is (\d{4}-\d{2}-\d{2})
+           ^
+Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+If you did mean to use an '\' you can use '\\' to escape it
+
+  Failed TooManyPeopleForTheRoom [1 ms]
+  Error Message:
+   Reqnroll.BindingException : Binding error(s) found: 
+This Cucumber Expression has a problem at column 12:
+
+today is (\d{4}-\d{2}-\d{2})
+           ^
+Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+If you did mean to use an '\' you can use '\\' to escape it
+  Stack Trace:
+     at Reqnroll.ErrorHandling.ErrorProvider.GetInvalidBindingRegistryError(IEnumerable`1 errors)
+   at Reqnroll.Infrastructure.TestExecutionEngine.GetStepMatch(StepInstance stepInstance)
+   at Reqnroll.Infrastructure.TestExecutionEngine.ExecuteStepAsync(IContextManager contextManager, StepInstance stepInstance)
+   at Reqnroll.Infrastructure.TestExecutionEngine.OnAfterLastStepAsync()
+   at Reqnroll.TestRunner.CollectScenarioErrorsAsync()
+   at BookingApp.Tests.Features.BookingMeetingRoomsFeature.ScenarioCleanupAsync()
+   at BookingApp.Tests.Features.BookingMeetingRoomsFeature.TooManyPeopleForTheRoom() in /home/runner/work/dotnet-testing/dotnet-testing/tests/BookingApp.Tests/Features/Booking.feature:line 37
+   at NUnit.Framework.Internal.TaskAwaitAdapter.GenericAdapter`1.GetResult()
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await[TResult](TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await(TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.RunTestMethod(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.Execute(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand.<>c__DisplayClass1_0.<Execute>b__0()
+   at NUnit.Framework.Internal.Commands.DelegatingTestCommand.RunTestMethodInThreadAbortSafeZone(TestExecutionContext context, Action action)
+
+  Standard Output Messages:
+ Given today is 2026-10-01
+ -> binding error: Binding error(s) found: 
+ This Cucumber Expression has a problem at column 12:
+ 
+ today is (\d{4}-\d{2}-\d{2})
+            ^
+ Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+ If you did mean to use an '\' you can use '\\' to escape it
+ When I book Fjord on 2026-10-02 from 10:00 to 11:00 for 5 people as "All hands"
+ -> binding error: Binding error(s) found: 
+ This Cucumber Expression has a problem at column 12:
+ 
+ today is (\d{4}-\d{2}-\d{2})
+            ^
+ Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+ If you did mean to use an '\' you can use '\\' to escape it
+ Then the booking is refused with "Fjord seats 4."
+ -> binding error: Binding error(s) found: 
+ This Cucumber Expression has a problem at column 12:
+ 
+ today is (\d{4}-\d{2}-\d{2})
+            ^
+ Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+ If you did mean to use an '\' you can use '\\' to escape it
+
+
+  Failed YesterdayCannotBeBookedAndTomorrowBecomesYesterday [1 ms]
+  Error Message:
+   Reqnroll.BindingException : Binding error(s) found: 
+This Cucumber Expression has a problem at column 12:
+
+today is (\d{4}-\d{2}-\d{2})
+           ^
+Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+If you did mean to use an '\' you can use '\\' to escape it
+  Stack Trace:
+     at Reqnroll.ErrorHandling.ErrorProvider.GetInvalidBindingRegistryError(IEnumerable`1 errors)
+   at Reqnroll.Infrastructure.TestExecutionEngine.GetStepMatch(StepInstance stepInstance)
+   at Reqnroll.Infrastructure.TestExecutionEngine.ExecuteStepAsync(IContextManager contextManager, StepInstance stepInstance)
+   at Reqnroll.Infrastructure.TestExecutionEngine.OnAfterLastStepAsync()
+   at Reqnroll.TestRunner.CollectScenarioErrorsAsync()
+   at BookingApp.Tests.Features.BookingMeetingRoomsFeature.ScenarioCleanupAsync()
+   at BookingApp.Tests.Features.BookingMeetingRoomsFeature.YesterdayCannotBeBookedAndTomorrowBecomesYesterday() in /home/runner/work/dotnet-testing/dotnet-testing/tests/BookingApp.Tests/Features/Booking.feature:line 44
+   at NUnit.Framework.Internal.TaskAwaitAdapter.GenericAdapter`1.GetResult()
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await[TResult](TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await(TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.RunTestMethod(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.Execute(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand.<>c__DisplayClass1_0.<Execute>b__0()
+   at NUnit.Framework.Internal.Commands.DelegatingTestCommand.RunTestMethodInThreadAbortSafeZone(TestExecutionContext context, Action action)
+
+  Standard Output Messages:
+ Given today is 2026-10-01
+ -> binding error: Binding error(s) found: 
+ This Cucumber Expression has a problem at column 12:
+ 
+ today is (\d{4}-\d{2}-\d{2})
+            ^
+ Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+ If you did mean to use an '\' you can use '\\' to escape it
+ When I book Tundra on 2026-09-30 from 10:00 to 11:00 for 2 people as "Too late"
+ -> binding error: Binding error(s) found: 
+ This Cucumber Expression has a problem at column 12:
+ 
+ today is (\d{4}-\d{2}-\d{2})
+            ^
+ Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+ If you did mean to use an '\' you can use '\\' to escape it
+ Then the answer is 400
+ -> binding error: Binding error(s) found: 
+ This Cucumber Expression has a problem at column 12:
+ 
+ today is (\d{4}-\d{2}-\d{2})
+            ^
+ Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+ If you did mean to use an '\' you can use '\\' to escape it
+ Given today is 2026-10-03
+ -> binding error: Binding error(s) found: 
+ This Cucumber Expression has a problem at column 12:
+ 
+ today is (\d{4}-\d{2}-\d{2})
+            ^
+ Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+ If you did mean to use an '\' you can use '\\' to escape it
+ When I book Tundra on 2026-10-02 from 10:00 to 11:00 for 2 people as "Also too late"
+ -> binding error: Binding error(s) found: 
+ This Cucumber Expression has a problem at column 12:
+ 
+ today is (\d{4}-\d{2}-\d{2})
+            ^
+ Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+ If you did mean to use an '\' you can use '\\' to escape it
+ Then the answer is 400
+ -> binding error: Binding error(s) found: 
+ This Cucumber Expression has a problem at column 12:
+ 
+ today is (\d{4}-\d{2}-\d{2})
+            ^
+ Only the characters '{', '}', '(', ')', '\', '/' and whitespace can be escaped.
+ If you did mean to use an '\' you can use '\\' to escape it
+
+
+  Passed ABooking_AppearsInTheList [1 s]
+  Passed AClash_IsExplainedInAnAlert [402 ms]
+  Passed AnotherRoom_HasItsOwnList [315 ms]
+  Passed ATitleWithMarkup_IsShownAsText [306 ms]
+  Passed Cancel_RemovesTheBooking [297 ms]
+  Passed EveryControl_HasAnAccessibleName [176 ms]
+NUnit Adapter 5.0.0.0: Test execution complete
+  Passed TheServersValidationMessage_IsShown [305 ms]
+Results File: /home/runner/work/dotnet-testing/dotnet-testing/results/junit.xml
+
+Test Run Failed.
+Total tests: 54
+     Passed: 43
+     Failed: 11
+ Total time: 6.1157 Seconds
+
+Attachments:
+  /home/runner/work/dotnet-testing/dotnet-testing/results/13618438-ea3c-4d8e-b171-623b4b59b8ae/coverage.cobertura.xml
