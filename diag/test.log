@@ -20,7 +20,7 @@ info: Microsoft.AspNetCore.Http.Result.CreatedResult[3]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'HTTP: POST /api/bookings'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 92.8140ms
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 51.9946ms
 info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
       Request starting HTTP/1.1 GET http://localhost/api/bookings/1 - - -
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
@@ -32,7 +32,7 @@ info: Microsoft.AspNetCore.Http.Result.OkObjectResult[3]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'HTTP: GET /api/bookings/{id:int}'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 GET http://localhost/api/bookings/1 - 200 - application/json;+charset=utf-8 2.7117ms
+      Request finished HTTP/1.1 GET http://localhost/api/bookings/1 - 200 - application/json;+charset=utf-8 1.5247ms
 info: Microsoft.Hosting.Lifetime[0]
       Application is shutting down...
 
@@ -53,7 +53,7 @@ info: Microsoft.AspNetCore.Http.Result.CreatedResult[3]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'HTTP: POST /api/bookings'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 12.6760ms
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 8.4234ms
 info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
       Request starting HTTP/1.1 DELETE http://localhost/api/bookings/1 - - -
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
@@ -63,7 +63,7 @@ info: Microsoft.AspNetCore.Http.Result.NoContentResult[1]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'HTTP: DELETE /api/bookings/{id:int}'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 DELETE http://localhost/api/bookings/1 - 204 - - 1.6555ms
+      Request finished HTTP/1.1 DELETE http://localhost/api/bookings/1 - 204 - - 1.1275ms
 info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
       Request starting HTTP/1.1 DELETE http://localhost/api/bookings/1 - - -
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
@@ -73,7 +73,7 @@ info: Microsoft.AspNetCore.Http.Result.NotFoundObjectResult[1]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'HTTP: DELETE /api/bookings/{id:int}'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 DELETE http://localhost/api/bookings/1 - 404 - application/problem+json 9.3909ms
+      Request finished HTTP/1.1 DELETE http://localhost/api/bookings/1 - 404 - application/problem+json 5.8251ms
 info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
       Request starting HTTP/1.1 POST http://localhost/api/bookings - application/json;+charset=utf-8 95
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
@@ -85,7 +85,7 @@ info: Microsoft.AspNetCore.Http.Result.CreatedResult[3]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'HTTP: POST /api/bookings'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 0.2682ms
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 0.1704ms
 info: Microsoft.Hosting.Lifetime[0]
       Application is shutting down...
 
@@ -106,7 +106,7 @@ info: Microsoft.AspNetCore.Http.Result.CreatedResult[3]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'HTTP: POST /api/bookings'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 12.2208ms
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 6.9780ms
 info: Microsoft.Hosting.Lifetime[0]
       Application is shutting down...
 
@@ -125,7 +125,7 @@ info: Microsoft.AspNetCore.Http.HttpResults.ProblemHttpResult[1]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'HTTP: POST /api/bookings'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 POST http://localhost/api/bookings - 400 - application/problem+json 12.3847ms
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 400 - application/problem+json 7.9446ms
 info: Microsoft.Hosting.Lifetime[0]
       Application is shutting down...
 
@@ -146,7 +146,7 @@ info: Microsoft.AspNetCore.Http.Result.CreatedResult[3]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'HTTP: POST /api/bookings'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 11.1267ms
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 6.7201ms
 info: Microsoft.Hosting.Lifetime[0]
       Application is shutting down...
 
@@ -165,7 +165,7 @@ info: Microsoft.AspNetCore.Http.HttpResults.ProblemHttpResult[1]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'HTTP: POST /api/bookings'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 POST http://localhost/api/bookings - 400 - application/problem+json 10.5037ms
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 400 - application/problem+json 6.7696ms
 info: Microsoft.Hosting.Lifetime[0]
       Application is shutting down...
 
@@ -186,7 +186,7 @@ info: Microsoft.AspNetCore.Http.Result.CreatedResult[3]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'HTTP: POST /api/bookings'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 10.6955ms
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 7.1492ms
 info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
       Request starting HTTP/1.1 POST http://localhost/api/bookings - application/json;+charset=utf-8 92
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
@@ -198,7 +198,7 @@ info: Microsoft.AspNetCore.Http.Result.CreatedResult[3]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'HTTP: POST /api/bookings'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 1.2495ms
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 0.8267ms
 info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
       Request starting HTTP/1.1 POST http://localhost/api/bookings - application/json;+charset=utf-8 96
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
@@ -210,7 +210,7 @@ info: Microsoft.AspNetCore.Http.Result.CreatedResult[3]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'HTTP: POST /api/bookings'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 0.1993ms
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 0.1045ms
 info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
       Request starting HTTP/1.1 GET http://localhost/api/bookings?roomId=2&date=2026-10-02 - - -
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
@@ -222,7 +222,7 @@ info: Microsoft.AspNetCore.Http.Result.OkObjectResult[3]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'HTTP: GET /api/bookings'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 GET http://localhost/api/bookings?roomId=2&date=2026-10-02 - 200 - application/json;+charset=utf-8 9.3609ms
+      Request finished HTTP/1.1 GET http://localhost/api/bookings?roomId=2&date=2026-10-02 - 200 - application/json;+charset=utf-8 4.9520ms
 info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
       Request starting HTTP/1.1 GET http://localhost/api/bookings?date=tomorrow - - -
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
@@ -232,7 +232,7 @@ info: Microsoft.AspNetCore.Http.HttpResults.ProblemHttpResult[1]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'HTTP: GET /api/bookings'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 GET http://localhost/api/bookings?date=tomorrow - 400 - application/problem+json 0.7096ms
+      Request finished HTTP/1.1 GET http://localhost/api/bookings?date=tomorrow - 400 - application/problem+json 0.2899ms
 info: Microsoft.Hosting.Lifetime[0]
       Application is shutting down...
 
@@ -249,7 +249,7 @@ info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'HTTP: POST /api/bookings'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 POST http://localhost/api/bookings - 400 - application/problem+json 11.2212ms
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 400 - application/problem+json 7.5665ms
 info: Microsoft.Hosting.Lifetime[0]
       Application is shutting down...
 
@@ -270,7 +270,7 @@ info: Microsoft.AspNetCore.Http.Result.CreatedResult[3]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'HTTP: POST /api/bookings'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 9.9982ms
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 7.0882ms
 info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
       Request starting HTTP/1.1 POST http://localhost/api/bookings - application/json;+charset=utf-8 95
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
@@ -282,19 +282,19 @@ info: Microsoft.AspNetCore.Http.Result.CreatedResult[3]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'HTTP: POST /api/bookings'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 1.1267ms
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 0.6171ms
 info: Microsoft.Hosting.Lifetime[0]
       Application is shutting down...
 
-  Passed Booking_IsCreated_WithLocation_AndCanBeReadBack [251 ms]
-  Passed Cancel_FreesTheSlot_AndIsNotFoundTheSecondTime [49 ms]
-  Passed Fjord with 4 people, its capacity → 201 [19 ms]
-  Passed Fjord with 5 people → 400 [18 ms]
-  Passed Aurora with 16 → 201 [16 ms]
-  Passed nobody → 400 [15 ms]
-  Passed List_FiltersByRoomAndDay_InStartOrder [50 ms]
-  Passed MalformedJson_IsAProblem_NotAStackTrace [19 ms]
-  Passed ends exactly when the other starts → allowed [17 ms]
+  Passed Booking_IsCreated_WithLocation_AndCanBeReadBack [142 ms]
+  Passed Cancel_FreesTheSlot_AndIsNotFoundTheSecondTime [28 ms]
+  Passed Fjord with 4 people, its capacity → 201 [10 ms]
+  Passed Fjord with 5 people → 400 [12 ms]
+  Passed Aurora with 16 → 201 [9 ms]
+  Passed nobody → 400 [9 ms]
+  Passed List_FiltersByRoomAndDay_InStartOrder [29 ms]
+  Passed MalformedJson_IsAProblem_NotAStackTrace [12 ms]
+  Passed ends exactly when the other starts → allowed [11 ms]
 info: Microsoft.Hosting.Lifetime[0]
       Application started. Press Ctrl+C to shut down.
 info: Microsoft.Hosting.Lifetime[0]
@@ -312,7 +312,7 @@ info: Microsoft.AspNetCore.Http.Result.CreatedResult[3]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'HTTP: POST /api/bookings'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 13.7041ms
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 6.8528ms
 info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
       Request starting HTTP/1.1 POST http://localhost/api/bookings - application/json;+charset=utf-8 95
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
@@ -324,7 +324,7 @@ info: Microsoft.AspNetCore.Http.Result.CreatedResult[3]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'HTTP: POST /api/bookings'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 1.4723ms
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 0.7637ms
 info: Microsoft.Hosting.Lifetime[0]
       Application is shutting down...
 
@@ -345,7 +345,7 @@ info: Microsoft.AspNetCore.Http.Result.CreatedResult[3]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'HTTP: POST /api/bookings'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 10.9724ms
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 7.7491ms
 info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
       Request starting HTTP/1.1 POST http://localhost/api/bookings - application/json;+charset=utf-8 95
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
@@ -355,7 +355,7 @@ info: Microsoft.AspNetCore.Http.HttpResults.ProblemHttpResult[1]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'HTTP: POST /api/bookings'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 POST http://localhost/api/bookings - 409 - application/problem+json 3.5167ms
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 409 - application/problem+json 2.0563ms
 info: Microsoft.Hosting.Lifetime[0]
       Application is shutting down...
 
@@ -376,7 +376,7 @@ info: Microsoft.AspNetCore.Http.Result.CreatedResult[3]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'HTTP: POST /api/bookings'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 13.6217ms
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 6.3024ms
 info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
       Request starting HTTP/1.1 POST http://localhost/api/bookings - application/json;+charset=utf-8 95
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
@@ -386,7 +386,7 @@ info: Microsoft.AspNetCore.Http.HttpResults.ProblemHttpResult[1]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'HTTP: POST /api/bookings'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 POST http://localhost/api/bookings - 409 - application/problem+json 2.0992ms
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 409 - application/problem+json 1.6224ms
 info: Microsoft.Hosting.Lifetime[0]
       Application is shutting down...
 
@@ -407,7 +407,7 @@ info: Microsoft.AspNetCore.Http.Result.CreatedResult[3]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'HTTP: POST /api/bookings'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 13.5080ms
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 8.2600ms
 info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
       Request starting HTTP/1.1 POST http://localhost/api/bookings - application/json;+charset=utf-8 95
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
@@ -417,7 +417,7 @@ info: Microsoft.AspNetCore.Http.HttpResults.ProblemHttpResult[1]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'HTTP: POST /api/bookings'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 POST http://localhost/api/bookings - 409 - application/problem+json 1.9649ms
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 409 - application/problem+json 1.3216ms
 info: Microsoft.Hosting.Lifetime[0]
       Application is shutting down...
 
@@ -438,7 +438,7 @@ info: Microsoft.AspNetCore.Http.Result.CreatedResult[3]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'HTTP: POST /api/bookings'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 12.0478ms
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 8.2890ms
 info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
       Request starting HTTP/1.1 POST http://localhost/api/bookings - application/json;+charset=utf-8 95
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
@@ -448,7 +448,7 @@ info: Microsoft.AspNetCore.Http.HttpResults.ProblemHttpResult[1]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'HTTP: POST /api/bookings'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 POST http://localhost/api/bookings - 409 - application/problem+json 2.0433ms
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 409 - application/problem+json 1.5245ms
 info: Microsoft.Hosting.Lifetime[0]
       Application is shutting down...
 
@@ -469,7 +469,7 @@ info: Microsoft.AspNetCore.Http.Result.CreatedResult[3]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'HTTP: POST /api/bookings'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 10.5898ms
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 7.3279ms
 info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
       Request starting HTTP/1.1 POST http://localhost/api/bookings - application/json;+charset=utf-8 95
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
@@ -479,7 +479,7 @@ info: Microsoft.AspNetCore.Http.HttpResults.ProblemHttpResult[1]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'HTTP: POST /api/bookings'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 POST http://localhost/api/bookings - 409 - application/problem+json 1.9678ms
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 409 - application/problem+json 1.0695ms
 info: Microsoft.Hosting.Lifetime[0]
       Application is shutting down...
 
@@ -498,7 +498,7 @@ info: Microsoft.AspNetCore.Http.HttpResults.ProblemHttpResult[1]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'HTTP: POST /api/bookings'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 POST http://localhost/api/bookings - 400 - application/problem+json 10.7453ms
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 400 - application/problem+json 6.1902ms
 info: Microsoft.Hosting.Lifetime[0]
       Application is shutting down...
 
@@ -519,7 +519,7 @@ info: Microsoft.AspNetCore.Http.Result.CreatedResult[3]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'HTTP: POST /api/bookings'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 10.3975ms
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 6.1303ms
 info: Microsoft.Hosting.Lifetime[0]
       Application is shutting down...
 
@@ -540,7 +540,7 @@ info: Microsoft.AspNetCore.Http.Result.CreatedResult[3]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'HTTP: POST /api/bookings'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 10.3705ms
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 6.0650ms
 info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
       Request starting HTTP/1.1 POST http://localhost/api/bookings - application/json;+charset=utf-8 95
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
@@ -552,7 +552,7 @@ info: Microsoft.AspNetCore.Http.Result.CreatedResult[3]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'HTTP: POST /api/bookings'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 1.0817ms
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 0.6535ms
 info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
       Request starting HTTP/1.1 POST http://localhost/api/bookings - application/json;+charset=utf-8 95
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
@@ -564,19 +564,19 @@ info: Microsoft.AspNetCore.Http.Result.CreatedResult[3]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'HTTP: POST /api/bookings'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 0.2301ms
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 0.0964ms
 info: Microsoft.Hosting.Lifetime[0]
       Application is shutting down...
 
-  Passed starts exactly when the other ends → allowed [25 ms]
-  Passed overlaps the start → 409 [21 ms]
-  Passed overlaps the end → 409 [20 ms]
-  Passed inside the other → 409 [20 ms]
-  Passed covers the other → 409 [19 ms]
-  Passed the same slot → 409 [18 ms]
-  Passed yesterday → 400 [15 ms]
-  Passed today → 201 [15 ms]
-  Passed SameSlot_InAnotherRoom_OrOnAnotherDay_IsFine [17 ms]
+  Passed starts exactly when the other ends → allowed [12 ms]
+  Passed overlaps the start → 409 [12 ms]
+  Passed overlaps the end → 409 [10 ms]
+  Passed inside the other → 409 [12 ms]
+  Passed covers the other → 409 [12 ms]
+  Passed the same slot → 409 [11 ms]
+  Passed yesterday → 400 [9 ms]
+  Passed today → 201 [8 ms]
+  Passed SameSlot_InAnotherRoom_OrOnAnotherDay_IsFine [9 ms]
 info: Microsoft.Hosting.Lifetime[0]
       Application started. Press Ctrl+C to shut down.
 info: Microsoft.Hosting.Lifetime[0]
@@ -592,7 +592,7 @@ info: Microsoft.AspNetCore.Http.Result.ContentResult[2]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'HTTP: GET /'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 GET http://localhost/ - 200 5809 text/html;+charset=utf-8 12.4403ms
+      Request finished HTTP/1.1 GET http://localhost/ - 200 5809 text/html;+charset=utf-8 7.8181ms
 info: Microsoft.Hosting.Lifetime[0]
       Application is shutting down...
 
@@ -639,7 +639,7 @@ info: Microsoft.AspNetCore.Http.Result.CreatedResult[3]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'HTTP: POST /api/bookings'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 11.1867ms
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 6.6519ms
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
       Executing endpoint 'HTTP: POST /api/bookings'
 info: Microsoft.AspNetCore.Http.HttpResults.ProblemHttpResult[1]
@@ -651,35 +651,11 @@ info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'HTTP: POST /api/bookings'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 POST http://localhost/api/bookings - 409 - application/problem+json 11.2782ms
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 409 - application/problem+json 6.7420ms
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 POST http://localhost/api/bookings - 409 - application/problem+json 13.1052ms
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 409 - application/problem+json 7.4600ms
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 POST http://localhost/api/bookings - 409 - application/problem+json 12.5301ms
-info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
-      Executing endpoint 'HTTP: POST /api/bookings'
-info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
-      Executing endpoint 'HTTP: POST /api/bookings'
-info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
-      Executing endpoint 'HTTP: POST /api/bookings'
-info: Microsoft.AspNetCore.Http.HttpResults.ProblemHttpResult[1]
-      Setting HTTP status code 409.
-info: Microsoft.AspNetCore.Http.HttpResults.ProblemHttpResult[1]
-      Setting HTTP status code 409.
-info: Microsoft.AspNetCore.Http.HttpResults.ProblemHttpResult[1]
-      Setting HTTP status code 409.
-info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
-      Executed endpoint 'HTTP: POST /api/bookings'
-info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
-      Executed endpoint 'HTTP: POST /api/bookings'
-info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
-      Executed endpoint 'HTTP: POST /api/bookings'
-info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 POST http://localhost/api/bookings - 409 - application/problem+json 11.7710ms
-info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 POST http://localhost/api/bookings - 409 - application/problem+json 11.8999ms
-info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 POST http://localhost/api/bookings - 409 - application/problem+json 11.9056ms
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 409 - application/problem+json 7.6596ms
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
       Executing endpoint 'HTTP: POST /api/bookings'
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
@@ -699,11 +675,35 @@ info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'HTTP: POST /api/bookings'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 POST http://localhost/api/bookings - 409 - application/problem+json 12.0686ms
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 409 - application/problem+json 7.0618ms
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 POST http://localhost/api/bookings - 409 - application/problem+json 12.0686ms
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 409 - application/problem+json 7.0647ms
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 POST http://localhost/api/bookings - 409 - application/problem+json 12.0165ms
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 409 - application/problem+json 6.9973ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Http.HttpResults.ProblemHttpResult[1]
+      Setting HTTP status code 409.
+info: Microsoft.AspNetCore.Http.HttpResults.ProblemHttpResult[1]
+      Setting HTTP status code 409.
+info: Microsoft.AspNetCore.Http.HttpResults.ProblemHttpResult[1]
+      Setting HTTP status code 409.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 409 - application/problem+json 7.1056ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 409 - application/problem+json 7.1056ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 409 - application/problem+json 7.0822ms
 info: Microsoft.Hosting.Lifetime[0]
       Application is shutting down...
 
@@ -722,7 +722,7 @@ info: Microsoft.AspNetCore.Http.HttpResults.ProblemHttpResult[1]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'HTTP: POST /api/bookings'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 POST http://localhost/api/bookings - 400 - application/problem+json 10.8833ms
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 400 - application/problem+json 6.2458ms
 info: Microsoft.Hosting.Lifetime[0]
       Application is shutting down...
 
@@ -743,7 +743,7 @@ info: Microsoft.AspNetCore.Http.Result.CreatedResult[3]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'HTTP: POST /api/bookings'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 11.1922ms
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 6.4174ms
 info: Microsoft.Hosting.Lifetime[0]
       Application is shutting down...
 
@@ -764,7 +764,7 @@ info: Microsoft.AspNetCore.Http.Result.CreatedResult[3]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'HTTP: POST /api/bookings'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 10.2962ms
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 6.2098ms
 info: Microsoft.Hosting.Lifetime[0]
       Application is shutting down...
 
@@ -783,7 +783,7 @@ info: Microsoft.AspNetCore.Http.HttpResults.ProblemHttpResult[1]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'HTTP: POST /api/bookings'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 POST http://localhost/api/bookings - 400 - application/problem+json 10.1855ms
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 400 - application/problem+json 6.4782ms
 info: Microsoft.Hosting.Lifetime[0]
       Application is shutting down...
 
@@ -804,7 +804,7 @@ info: Microsoft.AspNetCore.Http.Result.CreatedResult[3]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'HTTP: POST /api/bookings'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 9.9016ms
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 6.1954ms
 info: Microsoft.Hosting.Lifetime[0]
       Application is shutting down...
 
@@ -825,7 +825,7 @@ info: Microsoft.AspNetCore.Http.Result.CreatedResult[3]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'HTTP: POST /api/bookings'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 9.5997ms
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 5.9946ms
 info: Microsoft.Hosting.Lifetime[0]
       Application is shutting down...
 
@@ -844,19 +844,19 @@ info: Microsoft.AspNetCore.Http.HttpResults.ProblemHttpResult[1]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'HTTP: POST /api/bookings'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 POST http://localhost/api/bookings - 400 - application/problem+json 10.0965ms
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 400 - application/problem+json 6.2412ms
 info: Microsoft.Hosting.Lifetime[0]
       Application is shutting down...
 
-  Passed SecurityHeaders [30 ms]
-  Passed TenPeople_BookTheSameSlot_AtOnce_OneWins [20 ms]
-  Passed TheClockDecidesWhatIsPast [17 ms]
-  Passed 15 minutes, the minimum → 201 [16 ms]
-  Passed 4 hours, the maximum → 201 [14 ms]
-  Passed 4 h 15 min → 400 [14 ms]
-  Passed from opening time → 201 [14 ms]
-  Passed until closing time → 201 [13 ms]
-  Passed starts before 08:00 → 400 [14 ms]
+  Passed SecurityHeaders [17 ms]
+  Passed TenPeople_BookTheSameSlot_AtOnce_OneWins [11 ms]
+  Passed TheClockDecidesWhatIsPast [9 ms]
+  Passed 15 minutes, the minimum → 201 [9 ms]
+  Passed 4 hours, the maximum → 201 [8 ms]
+  Passed 4 h 15 min → 400 [8 ms]
+  Passed from opening time → 201 [8 ms]
+  Passed until closing time → 201 [8 ms]
+  Passed starts before 08:00 → 400 [8 ms]
 info: Microsoft.Hosting.Lifetime[0]
       Application started. Press Ctrl+C to shut down.
 info: Microsoft.Hosting.Lifetime[0]
@@ -872,26 +872,7 @@ info: Microsoft.AspNetCore.Http.HttpResults.ProblemHttpResult[1]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'HTTP: POST /api/bookings'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 POST http://localhost/api/bookings - 400 - application/problem+json 10.4081ms
-info: Microsoft.Hosting.Lifetime[0]
-      Application is shutting down...
-
-info: Microsoft.Hosting.Lifetime[0]
-      Application started. Press Ctrl+C to shut down.
-info: Microsoft.Hosting.Lifetime[0]
-      Hosting environment: Production
-info: Microsoft.Hosting.Lifetime[0]
-      Content root path: /home/runner/work/dotnet-testing/dotnet-testing/src/BookingApp
-info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
-      Request starting HTTP/1.1 POST http://localhost/api/bookings - application/json;+charset=utf-8 95
-info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
-      Executing endpoint 'HTTP: POST /api/bookings'
-info: Microsoft.AspNetCore.Http.HttpResults.ProblemHttpResult[1]
-      Setting HTTP status code 400.
-info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
-      Executed endpoint 'HTTP: POST /api/bookings'
-info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 POST http://localhost/api/bookings - 400 - application/problem+json 12.2949ms
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 400 - application/problem+json 6.7593ms
 info: Microsoft.Hosting.Lifetime[0]
       Application is shutting down...
 
@@ -910,7 +891,7 @@ info: Microsoft.AspNetCore.Http.HttpResults.ProblemHttpResult[1]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'HTTP: POST /api/bookings'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 POST http://localhost/api/bookings - 400 - application/problem+json 10.2424ms
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 400 - application/problem+json 6.3408ms
 info: Microsoft.Hosting.Lifetime[0]
       Application is shutting down...
 
@@ -929,7 +910,26 @@ info: Microsoft.AspNetCore.Http.HttpResults.ProblemHttpResult[1]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'HTTP: POST /api/bookings'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 POST http://localhost/api/bookings - 400 - application/problem+json 10.2426ms
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 400 - application/problem+json 6.5882ms
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Production
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /home/runner/work/dotnet-testing/dotnet-testing/src/BookingApp
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/api/bookings - application/json;+charset=utf-8 95
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Http.HttpResults.ProblemHttpResult[1]
+      Setting HTTP status code 400.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'HTTP: POST /api/bookings'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 400 - application/problem+json 6.3763ms
 info: Microsoft.Hosting.Lifetime[0]
       Application is shutting down...
 
@@ -948,7 +948,7 @@ info: Microsoft.AspNetCore.Http.HttpResults.ProblemHttpResult[1]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'HTTP: POST /api/bookings'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 POST http://localhost/api/bookings - 400 - application/problem+json 10.9405ms
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 400 - application/problem+json 6.7827ms
 info: Microsoft.Hosting.Lifetime[0]
       Application is shutting down...
 
@@ -969,7 +969,7 @@ info: Microsoft.AspNetCore.Http.Result.CreatedResult[3]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'HTTP: POST /api/bookings'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 10.4481ms
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 6.3950ms
 info: Microsoft.Hosting.Lifetime[0]
       Application is shutting down...
 
@@ -990,7 +990,7 @@ info: Microsoft.AspNetCore.Http.Result.CreatedResult[3]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'HTTP: POST /api/bookings'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 10.3483ms
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 6.4973ms
 info: Microsoft.Hosting.Lifetime[0]
       Application is shutting down...
 
@@ -1009,7 +1009,7 @@ info: Microsoft.AspNetCore.Http.HttpResults.ProblemHttpResult[1]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'HTTP: POST /api/bookings'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 POST http://localhost/api/bookings - 400 - application/problem+json 10.6147ms
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 400 - application/problem+json 6.5327ms
 info: Microsoft.Hosting.Lifetime[0]
       Application is shutting down...
 
@@ -1028,19 +1028,19 @@ info: Microsoft.AspNetCore.Http.HttpResults.ProblemHttpResult[1]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'HTTP: POST /api/bookings'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 POST http://localhost/api/bookings - 400 - application/problem+json 10.0921ms
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 400 - application/problem+json 6.4763ms
 info: Microsoft.Hosting.Lifetime[0]
       Application is shutting down...
 
-  Passed ends after 20:00 → 400 [15 ms]
-  Passed off the 15-minute grid → 400 [16 ms]
-  Passed ends before it starts → 400 [14 ms]
-  Passed zero length → 400 [14 ms]
-  Passed not HH:mm → 400 [20 ms]
-  Passed a 1-character title → 201 [16 ms]
-  Passed a 100-character title → 201 [15 ms]
-  Passed a 101-character title → 400 [15 ms]
-  Passed ValidationProblem_NamesEveryBadField [19 ms]
+  Passed ends after 20:00 → 400 [9 ms]
+  Passed off the 15-minute grid → 400 [8 ms]
+  Passed ends before it starts → 400 [8 ms]
+  Passed zero length → 400 [8 ms]
+  Passed not HH:mm → 400 [12 ms]
+  Passed a 1-character title → 201 [9 ms]
+  Passed a 100-character title → 201 [8 ms]
+  Passed a 101-character title → 400 [8 ms]
+  Passed ValidationProblem_NamesEveryBadField [11 ms]
 Given today is 2026-10-01
 info: Microsoft.Hosting.Lifetime[0]
       Application started. Press Ctrl+C to shut down.
@@ -1048,7 +1048,7 @@ info: Microsoft.Hosting.Lifetime[0]
       Hosting environment: Production
 info: Microsoft.Hosting.Lifetime[0]
       Content root path: /home/runner/work/dotnet-testing/dotnet-testing/src/BookingApp
--> done: BookingSteps.Today("2026-10-01") (0.5s)
+-> done: BookingSteps.Today("2026-10-01") (0.2s)
 Given Tundra is booked on 2026-10-02 from 10:00 to 11:00 as "Planning"
 info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
       Request starting HTTP/1.1 POST http://localhost/api/bookings - application/json;+charset=utf-8 95
@@ -1061,7 +1061,7 @@ info: Microsoft.AspNetCore.Http.Result.CreatedResult[3]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'HTTP: POST /api/bookings'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 16.5191ms
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 9.7629ms
 -> done: BookingSteps.Booked("Tundra", "2026-10-02", "10:00", "11:00", "Planning") (0.0s)
 When I cancel "Planning"
 info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
@@ -1072,10 +1072,10 @@ info: Microsoft.AspNetCore.Http.Result.NoContentResult[1]
       Setting HTTP status code 204.
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'HTTP: DELETE /api/bookings/{id:int}'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 DELETE http://localhost/api/bookings/1 - 204 - - 0.8715ms
 -> done: BookingSteps.Cancel("Planning") (0.0s)
 And I book Tundra on 2026-10-02 from 10:00 to 11:00 for 4 people as "Replanning"
-info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 DELETE http://localhost/api/bookings/1 - 204 - - 1.5106ms
 info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
       Request starting HTTP/1.1 POST http://localhost/api/bookings - application/json;+charset=utf-8 97
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
@@ -1085,11 +1085,11 @@ info: Microsoft.AspNetCore.Http.Result.CreatedResult[1]
 info: Microsoft.AspNetCore.Http.Result.CreatedResult[3]
       Writing value of type 'Booking' as Json.
 -> done: BookingSteps.Book("Tundra", "2026-10-02", "10:00", "11:00", 4, "Replanning") (0.0s)
-Then the booking is confirmed
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'HTTP: POST /api/bookings'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 0.6138ms
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 0.2493ms
+Then the booking is confirmed
 -> done: BookingSteps.Confirmed() (0.0s)
 info: Microsoft.Hosting.Lifetime[0]
       Application is shutting down...
@@ -1111,13 +1111,13 @@ info: Microsoft.AspNetCore.Http.Result.CreatedResult[1]
       Setting HTTP status code 201.
 info: Microsoft.AspNetCore.Http.Result.CreatedResult[3]
       Writing value of type 'Booking' as Json.
--> done: BookingSteps.Book("Tundra", "2026-10-02", "10:00", "11:00", 4, "Planning") (0.0s)
-Then the booking is confirmed
--> done: BookingSteps.Confirmed() (0.0s)
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'HTTP: POST /api/bookings'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 15.3538ms
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 7.1543ms
+-> done: BookingSteps.Book("Tundra", "2026-10-02", "10:00", "11:00", 4, "Planning") (0.0s)
+Then the booking is confirmed
+-> done: BookingSteps.Confirmed() (0.0s)
 And Tundra on 2026-10-02 has these bookings:
   --- table step argument ---
   | start | end   | title    |
@@ -1130,11 +1130,11 @@ info: Microsoft.AspNetCore.Http.Result.OkObjectResult[1]
       Setting HTTP status code 200.
 info: Microsoft.AspNetCore.Http.Result.OkObjectResult[3]
       Writing value of type 'List`1' as Json.
--> done: BookingSteps.HasBookings("Tundra", "2026-10-02", <table>) (0.0s)
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'HTTP: GET /api/bookings'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 GET http://localhost/api/bookings?roomId=2&date=2026-10-02 - 200 - application/json;+charset=utf-8 2.4173ms
+      Request finished HTTP/1.1 GET http://localhost/api/bookings?roomId=2&date=2026-10-02 - 200 - application/json;+charset=utf-8 0.9509ms
+-> done: BookingSteps.HasBookings("Tundra", "2026-10-02", <table>) (0.0s)
 info: Microsoft.Hosting.Lifetime[0]
       Application is shutting down...
 
@@ -1158,7 +1158,7 @@ info: Microsoft.AspNetCore.Http.Result.CreatedResult[3]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'HTTP: POST /api/bookings'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 17.4926ms
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 7.9660ms
 -> done: BookingSteps.Booked("Tundra", "2026-10-02", "10:00", "11:00", "Planning") (0.0s)
 When I book Tundra on 2026-10-02 from 11:00 to 12:00 for 4 people as "Review"
 info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
@@ -1172,7 +1172,7 @@ info: Microsoft.AspNetCore.Http.Result.CreatedResult[3]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'HTTP: POST /api/bookings'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 1.4211ms
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 0.7302ms
 -> done: BookingSteps.Book("Tundra", "2026-10-02", "11:00", "12:00", 4, "Review") (0.0s)
 Then the booking is confirmed
 -> done: BookingSteps.Confirmed() (0.0s)
@@ -1186,7 +1186,7 @@ info: Microsoft.AspNetCore.Http.HttpResults.ProblemHttpResult[1]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'HTTP: POST /api/bookings'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 POST http://localhost/api/bookings - 409 - application/problem+json 2.8249ms
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 409 - application/problem+json 0.8904ms
 -> done: BookingSteps.Book("Tundra", "2026-10-02", "11:30", "12:30", 4, "Standup") (0.0s)
 Then the booking is refused because the room is taken by "Review"
 -> done: BookingSteps.TakenBy("Review") (0.0s)
@@ -1213,7 +1213,7 @@ info: Microsoft.AspNetCore.Http.Result.CreatedResult[3]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'HTTP: POST /api/bookings'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 14.9250ms
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 6.7082ms
 -> done: BookingSteps.Book("Aurora", "2026-10-02", "08:00", "08:15", 4, "Workshop") (0.0s)
 Then the answer is 201
 -> done: BookingSteps.Status(201) (0.0s)
@@ -1235,12 +1235,12 @@ info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
       Executing endpoint 'HTTP: POST /api/bookings'
 info: Microsoft.AspNetCore.Http.HttpResults.ProblemHttpResult[1]
       Setting HTTP status code 400.
--> done: BookingSteps.Book("Aurora", "2026-10-02", "07:45", "08:15", 4, "Workshop") (0.0s)
-Then the answer is 400
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'HTTP: POST /api/bookings'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 POST http://localhost/api/bookings - 400 - application/problem+json 16.5992ms
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 400 - application/problem+json 6.9694ms
+-> done: BookingSteps.Book("Aurora", "2026-10-02", "07:45", "08:15", 4, "Workshop") (0.0s)
+Then the answer is 400
 -> done: BookingSteps.Status(400) (0.0s)
 info: Microsoft.Hosting.Lifetime[0]
       Application is shutting down...
@@ -1265,7 +1265,7 @@ info: Microsoft.AspNetCore.Http.Result.CreatedResult[3]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'HTTP: POST /api/bookings'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 11.4657ms
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 201 - application/json;+charset=utf-8 6.6883ms
 -> done: BookingSteps.Book("Aurora", "2026-10-02", "16:00", "20:00", 4, "Workshop") (0.0s)
 Then the answer is 201
 -> done: BookingSteps.Status(201) (0.0s)
@@ -1290,7 +1290,7 @@ info: Microsoft.AspNetCore.Http.HttpResults.ProblemHttpResult[1]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'HTTP: POST /api/bookings'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 POST http://localhost/api/bookings - 400 - application/problem+json 11.2262ms
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 400 - application/problem+json 6.7001ms
 -> done: BookingSteps.Book("Aurora", "2026-10-02", "16:00", "20:15", 4, "Workshop") (0.0s)
 Then the answer is 400
 -> done: BookingSteps.Status(400) (0.0s)
@@ -1315,7 +1315,7 @@ info: Microsoft.AspNetCore.Http.HttpResults.ProblemHttpResult[1]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'HTTP: POST /api/bookings'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 POST http://localhost/api/bookings - 400 - application/problem+json 11.3822ms
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 400 - application/problem+json 6.5505ms
 -> done: BookingSteps.Book("Aurora", "2026-10-02", "09:00", "13:15", 4, "Workshop") (0.0s)
 Then the answer is 400
 -> done: BookingSteps.Status(400) (0.0s)
@@ -1340,22 +1340,22 @@ info: Microsoft.AspNetCore.Http.HttpResults.ProblemHttpResult[1]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'HTTP: POST /api/bookings'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 POST http://localhost/api/bookings - 400 - application/problem+json 11.8528ms
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 400 - application/problem+json 6.8636ms
 -> done: BookingSteps.Book("Aurora", "2026-10-02", "09:10", "10:00", 4, "Workshop") (0.0s)
 Then the answer is 400
 -> done: BookingSteps.Status(400) (0.0s)
 info: Microsoft.Hosting.Lifetime[0]
       Application is shutting down...
 
-  Passed ACancelledSlotCanBeBookedAgain [554 ms]
-  Passed AFreeSlotIsBooked [39 ms]
-  Passed Back_To_BackMeetingsAreFineOverlappingOnesAreNot [35 ms]
-  Passed OpeningHoursAndLength("08:00","08:15","201",null) [23 ms]
-  Passed OpeningHoursAndLength("07:45","08:15","400",null) [24 ms]
-  Passed OpeningHoursAndLength("16:00","20:00","201",null) [18 ms]
-  Passed OpeningHoursAndLength("16:00","20:15","400",null) [17 ms]
-  Passed OpeningHoursAndLength("09:00","13:15","400",null) [17 ms]
-  Passed OpeningHoursAndLength("09:10","10:00","400",null) [25 ms]
+  Passed ACancelledSlotCanBeBookedAgain [204 ms]
+  Passed AFreeSlotIsBooked [20 ms]
+  Passed Back_To_BackMeetingsAreFineOverlappingOnesAreNot [15 ms]
+  Passed OpeningHoursAndLength("08:00","08:15","201",null) [11 ms]
+  Passed OpeningHoursAndLength("07:45","08:15","400",null) [10 ms]
+  Passed OpeningHoursAndLength("16:00","20:00","201",null) [9 ms]
+  Passed OpeningHoursAndLength("16:00","20:15","400",null) [9 ms]
+  Passed OpeningHoursAndLength("09:00","13:15","400",null) [9 ms]
+  Passed OpeningHoursAndLength("09:10","10:00","400",null) [12 ms]
 Given today is 2026-10-01
 info: Microsoft.Hosting.Lifetime[0]
       Application started. Press Ctrl+C to shut down.
@@ -1374,7 +1374,7 @@ info: Microsoft.AspNetCore.Http.HttpResults.ProblemHttpResult[1]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'HTTP: POST /api/bookings'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 POST http://localhost/api/bookings - 400 - application/problem+json 11.3720ms
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 400 - application/problem+json 6.5546ms
 -> done: BookingSteps.Book("Fjord", "2026-10-02", "10:00", "11:00", 5, "All hands") (0.0s)
 Then the booking is refused with "Fjord seats 4."
 -> done: BookingSteps.RefusedWith("Fjord seats 4.") (0.0s)
@@ -1399,7 +1399,7 @@ info: Microsoft.AspNetCore.Http.HttpResults.ProblemHttpResult[1]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'HTTP: POST /api/bookings'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 POST http://localhost/api/bookings - 400 - application/problem+json 11.1209ms
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 400 - application/problem+json 6.5319ms
 -> done: BookingSteps.Book("Tundra", "2026-09-30", "10:00", "11:00", 2, "Too late") (0.0s)
 Then the answer is 400
 -> done: BookingSteps.Status(400) (0.0s)
@@ -1415,29 +1415,29 @@ info: Microsoft.AspNetCore.Http.HttpResults.ProblemHttpResult[1]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'HTTP: POST /api/bookings'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/1.1 POST http://localhost/api/bookings - 400 - application/problem+json 1.2948ms
+      Request finished HTTP/1.1 POST http://localhost/api/bookings - 400 - application/problem+json 0.7826ms
 -> done: BookingSteps.Book("Tundra", "2026-10-02", "10:00", "11:00", 2, "Also too late") (0.0s)
 Then the answer is 400
 -> done: BookingSteps.Status(400) (0.0s)
 info: Microsoft.Hosting.Lifetime[0]
       Application is shutting down...
 
-  Passed TooManyPeopleForTheRoom [23 ms]
-  Passed YesterdayCannotBeBookedAndTomorrowBecomesYesterday [20 ms]
-  Passed ABooking_AppearsInTheList [1 s]
-  Passed AClash_IsExplainedInAnAlert [360 ms]
+  Passed TooManyPeopleForTheRoom [12 ms]
+  Passed YesterdayCannotBeBookedAndTomorrowBecomesYesterday [11 ms]
+  Passed ABooking_AppearsInTheList [672 ms]
+  Passed AClash_IsExplainedInAnAlert [300 ms]
+  Passed AnotherRoom_HasItsOwnList [166 ms]
+  Passed ATitleWithMarkup_IsShownAsText [221 ms]
 NUnit Adapter 5.0.0.0: Test execution complete
-  Passed AnotherRoom_HasItsOwnList [293 ms]
-  Passed ATitleWithMarkup_IsShownAsText [311 ms]
-  Passed Cancel_RemovesTheBooking [336 ms]
-  Passed EveryControl_HasAnAccessibleName [191 ms]
-  Passed TheServersValidationMessage_IsShown [275 ms]
+  Passed Cancel_RemovesTheBooking [213 ms]
+  Passed EveryControl_HasAnAccessibleName [123 ms]
+  Passed TheServersValidationMessage_IsShown [197 ms]
 Results File: /home/runner/work/dotnet-testing/dotnet-testing/results/junit.xml
 
 Test Run Successful.
 Total tests: 54
      Passed: 54
- Total time: 6.3315 Seconds
+ Total time: 3.9516 Seconds
 
 Attachments:
-  /home/runner/work/dotnet-testing/dotnet-testing/results/95cc112d-5a72-4592-aeee-8e3820cd370a/coverage.cobertura.xml
+  /home/runner/work/dotnet-testing/dotnet-testing/results/7613a12d-eef0-4f87-8cc9-e12676a2a6ba/coverage.cobertura.xml

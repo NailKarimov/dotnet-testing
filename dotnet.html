@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en" data-default-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Room booking tests in C#</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Public+Sans:wght@400;500;700&family=JetBrains+Mono:wght@400;500;700&display=swap">
+<style>
+/* Layout: a room-booking day planner. An overlap checker on a timeline, in-memory vs Kestrel, the label trap,
+   the Reqnroll trap, the mutant table, commands. */
+:root {
+  --bg: #eef0f4; --surface: #ffffff; --sunken: #e2e6ee; --ink: #141720; --muted: #5a6070; --line: #cfd4df;
+  --accent: #6b3fb5; --accent-soft: #ece3f9; --px: #0f6b73; --px-soft: #d5eeee;
+  --ok: #17784b; --ok-soft: #d8f1e3; --bad: #b42318; --bad-soft: #fbe1dd; --warn: #8a6100; --warn-soft: #f7ebc8;
+  --font-display: 'Bricolage Grotesque', 'Public Sans', system-ui, sans-serif;
+  --font-body: 'Public Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #101219; --surface: #181b24; --sunken: #20242f; --ink: #e8eaf1; --muted: #a0a6b5; --line: #2e3341;
+    --accent: #b99cf0; --accent-soft: #261a3d; --px: #6fd3db; --px-soft: #0f3134;
+    --ok: #62d49a; --ok-soft: #12321f; --bad: #ff8a7d; --bad-soft: #3d1714; --warn: #f1c35a; --warn-soft: #3a2d0c;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #101219; --surface: #181b24; --sunken: #20242f; --ink: #e8eaf1; --muted: #a0a6b5; --line: #2e3341;
+  --accent: #b99cf0; --accent-soft: #261a3d; --px: #6fd3db; --px-soft: #0f3134;
+  --ok: #62d49a; --ok-soft: #12321f; --bad: #ff8a7d; --bad-soft: #3d1714; --warn: #f1c35a; --warn-soft: #3a2d0c;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font: 400 16px/1.6 var(--font-body); margin: 0; }
+body[data-lang="ru"] [lang="en"], body[data-lang="en"] [lang="ru"] { display: none !important; }
+.wrap { max-width: 1080px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 0 64px; }
+h1, h2, h3 { font-family: var(--font-display); text-wrap: balance; line-height: 1.1; margin: 0; }
+h1 { font-size: clamp(30px, 5vw, 50px); font-weight: 800; letter-spacing: -0.02em; }
+h2 { font-size: clamp(22px, 2.8vw, 30px); font-weight: 800; letter-spacing: -0.01em; }
+h3 { font-size: 16px; font-weight: 600; }
+p { margin: 0; max-width: 70ch; }
+code, .mono { font-family: var(--font-mono); font-size: 0.86em; }
+a { color: var(--accent); }
+button { font-family: var(--font-body); }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+.eyebrow { font: 500 12px/1 var(--font-mono); letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+.muted { color: var(--muted); }
+header.top { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding-block: 20px; flex-wrap: wrap; }
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 999px; overflow: hidden; }
+.seg button { font: 500 13px var(--font-mono); background: transparent; color: var(--muted); border: 0; padding: 6px 14px; cursor: pointer; }
+.seg button[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
+.hero { display: grid; gap: 16px; padding-block: 8px; }
+.hero .lead { font-size: 18px; color: var(--muted); }
+.facts { display: flex; flex-wrap: wrap; gap: 8px 24px; font-size: 14px; color: var(--muted); }
+.facts b { font: 800 24px var(--font-display); color: var(--ink); margin-right: 6px; font-variant-numeric: tabular-nums; }
+section.station { display: grid; grid-template-columns: minmax(0, 1fr); gap: 16px; padding-block: 52px 0; }
+section.station > header { display: grid; gap: 8px; }
+.num { font: 700 13px var(--font-mono); color: var(--accent); }
+.chips { display: flex; gap: 6px; flex-wrap: wrap; }
+.chips button { font: 500 13.5px var(--font-body); border: 1px solid var(--line); background: var(--surface); color: var(--ink); border-radius: 999px; padding: 6px 12px; cursor: pointer; }
+.chips button[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.panel { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 16px; display: grid; gap: 10px; align-content: start; min-width: 0; }
+.two { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 12px; }
+@media (max-width: 780px) { .two { grid-template-columns: minmax(0, 1fr); } }
+pre.code { margin: 0; background: var(--sunken); border-radius: 8px; padding: 10px 12px; font: 400 12.5px/1.55 var(--font-mono); overflow-x: auto; white-space: pre; }
+.tag { font: 600 11px var(--font-mono); padding: 2px 7px; border-radius: 4px; display: inline-block; white-space: nowrap; }
+.tag.ok { background: var(--ok-soft); color: var(--ok); } .tag.bad { background: var(--bad-soft); color: var(--bad); }
+.tag.warn { background: var(--warn-soft); color: var(--warn); } .tag.ac { background: var(--accent-soft); color: var(--accent); }
+.tag.px { background: var(--px-soft); color: var(--px); }
+.state { border-radius: 12px; padding: 14px; display: grid; gap: 4px; font-size: 15px; }
+.state.ok { background: var(--ok-soft); } .state.bad { background: var(--bad-soft); } .state.warn { background: var(--warn-soft); }
+.state b { font-family: var(--font-display); font-size: 19px; }
+
+.ctl { display: grid; gap: 12px; }
+.ctl label { display: grid; gap: 4px; font-size: 13.5px; color: var(--muted); }
+.ctl input { font: 500 15px var(--font-mono); padding: 8px 10px; border-radius: 8px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); }
+.kv { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 6px 12px; font-size: 14.5px; align-items: baseline; }
+.kv b { font: 700 15px var(--font-mono); text-align: right; font-variant-numeric: tabular-nums; }
+.list { display: grid; gap: 6px; grid-template-columns: minmax(0, 1fr); }
+.item { display: grid; grid-template-columns: 130px minmax(0, 1.3fr) minmax(0, 1fr); gap: 12px; align-items: start; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 10px 14px; font-size: 14.5px; }
+@media (max-width: 760px) { .item { grid-template-columns: minmax(0, 1fr); gap: 4px; } }
+.item code { overflow-wrap: anywhere; }
+.lanes { display: grid; gap: 8px; }
+.lane { display: grid; grid-template-columns: 110px minmax(0, 1fr); gap: 10px; align-items: center; font-size: 13.5px; }
+.lane .track { display: flex; gap: 4px; flex-wrap: wrap; }
+.lane .track span { font: 600 11.5px var(--font-mono); padding: 5px 8px; border-radius: 6px; background: var(--sunken); }
+.lane .track span.w { background: var(--warn-soft); color: var(--warn); }
+.lane .track span.bad { background: var(--bad-soft); color: var(--bad); }
+.lane .track span.ok { background: var(--ok-soft); color: var(--ok); }
+dl.terms { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin: 0; }
+@media (max-width: 760px) { dl.terms { grid-template-columns: minmax(0, 1fr); } }
+dl.terms div { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 10px 14px; }
+dt { font: 700 13.5px var(--font-mono); } dd { margin: 4px 0 0; font-size: 14.5px; color: var(--muted); }
+.cmds { display: grid; gap: 6px; grid-template-columns: minmax(0, 1fr); }
+.cmd { display: flex; gap: 8px; align-items: center; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 8px 8px 8px 14px; min-width: 0; }
+.cmd code { flex: 1; overflow-x: auto; white-space: nowrap; }
+.cmd button { font: 600 12px var(--font-mono); border: 1px solid var(--line); background: var(--sunken); color: var(--ink); border-radius: 6px; padding: 6px 10px; cursor: pointer; }
+footer { padding-top: 48px; font-size: 14px; color: var(--muted); }
+.bk { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+.bk button { font: 600 13px var(--font-mono); border: 1px solid var(--line); background: var(--surface); color: var(--ink); border-radius: 8px; padding: 8px 12px; cursor: pointer; }
+.fsm { display: flex; gap: 8px; flex-wrap: wrap; }
+.fsm span { font: 700 13px var(--font-mono); padding: 8px 14px; border-radius: 999px; border: 1px dashed var(--line); color: var(--muted); }
+.fsm span.on.closed { background: var(--ok-soft); color: var(--ok); border-style: solid; border-color: var(--ok); }
+.fsm span.on.open { background: var(--bad-soft); color: var(--bad); border-style: solid; border-color: var(--bad); }
+.fsm span.on.half { background: var(--warn-soft); color: var(--warn); border-style: solid; border-color: var(--warn); }
+.log { font: 400 12.5px/1.6 var(--font-mono); background: var(--sunken); border-radius: 8px; padding: 10px 12px; max-height: 190px; overflow-y: auto; margin: 0; white-space: pre-wrap; }
+.switch { display: inline-flex; gap: 8px; align-items: center; font-size: 14px; }
+.tl { position: relative; height: 92px; background: var(--sunken); border-radius: 8px; }
+.tl .bar { position: absolute; height: 30px; border-radius: 6px; font: 600 12px var(--font-mono); display: flex; align-items: center; padding: 0 6px; overflow: hidden; white-space: nowrap; }
+.tl .old { top: 10px; background: var(--accent-soft); color: var(--accent); border: 1px solid var(--accent); }
+.tl .new { top: 50px; }
+.tl .new.ok { background: var(--ok-soft); color: var(--ok); border: 1px solid var(--ok); }
+.tl .new.bad { background: var(--bad-soft); color: var(--bad); border: 1px solid var(--bad); }
+.ticks { display: flex; justify-content: space-between; font: 500 11px var(--font-mono); color: var(--muted); }
+.ctl select { font: 500 15px var(--font-mono); padding: 8px 10px; border-radius: 8px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); }
+.ctl .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.demo { display: grid; gap: 6px; }
+.demo .name { font: 600 14px var(--font-mono); background: var(--sunken); border-radius: 6px; padding: 6px 10px; overflow-wrap: anywhere; }
+.demo .tag { white-space: normal; overflow-wrap: anywhere; justify-self: start; }
+.demo { min-width: 0; }
+.ctl label.switch { display: flex; gap: 8px; align-items: center; color: var(--ink); }
+.panel > .tag { justify-self: start; }
+</style>
+</head>
+<body data-lang="ru">
+<div class="wrap">
+  <header class="top">
+    <span class="eyebrow">dotnet-testing · NUnit · WebApplicationFactory · Reqnroll · Playwright .NET</span>
+    <div class="seg" role="group" aria-label="Language">
+      <button type="button" id="lang-ru" data-l="ru" aria-pressed="true">RU</button>
+      <button type="button" id="lang-en" data-l="en" aria-pressed="false">EN</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h1 lang="ru">Тесты на C#: бронирование переговорок</h1>
+    <h1 lang="en">Testing in C#: booking meeting rooms</h1>
+    <p class="lead" lang="ru">Своё приложение на ASP.NET Core minimal API с одной страницей и три слоя тестов: API в памяти через WebApplicationFactory, сценарии Reqnroll и браузерные тесты Playwright для .NET на настоящем Kestrel.</p>
+    <p class="lead" lang="en">An ASP.NET Core minimal API app of our own with one page, and three layers of tests: the API in memory through WebApplicationFactory, Reqnroll scenarios, and Playwright for .NET browser tests on real Kestrel.</p>
+    <div class="facts">
+      <span><b>54</b><span lang="ru">теста за ~6 с</span><span lang="en">tests in ~6 s</span></span>
+      <span><b>100 %</b><span lang="ru">строк приложения покрыто</span><span lang="en">of the app's lines covered</span></span>
+      <span><b>12/12</b><span lang="ru">посаженных багов пойманы</span><span lang="en">planted bugs caught</span></span>
+    </div>
+  </section>
+
+  <section class="station" aria-labelledby="p1">
+    <header>
+      <span class="num">01</span>
+      <h2 id="p1" lang="ru">Пересекаются или нет?</h2><h2 lang="en">Do they overlap?</h2>
+      <p class="muted" lang="ru">Переговорка уже занята с 10:00 до 11:00. Выберите время новой брони. Правило в коде: <code>b.Start &lt; end &amp;&amp; start &lt; b.End</code>. Мутант M1 меняет «&lt;» на «≤» — и встречи встык начинают конфликтовать.</p>
+      <p class="muted" lang="en">The room is already booked 10:00–11:00. Pick the new booking's times. The rule in code: <code>b.Start &lt; end &amp;&amp; start &lt; b.End</code>. Mutant M1 turns "&lt;" into "≤", and back-to-back meetings start to clash.</p>
+    </header>
+    <div class="two">
+      <div class="panel ctl">
+        <div class="pair">
+          <label for="ns"><span lang="ru">Начало</span><span lang="en">Start</span></label>
+          <label for="ne"><span lang="ru">Конец</span><span lang="en">End</span></label>
+          <select id="ns"></select><select id="ne"></select>
+        </div>
+        <label class="switch"><input type="checkbox" id="m1"><span lang="ru">Мутант M1 (≤ вместо &lt;)</span><span lang="en">Mutant M1 (≤ instead of &lt;)</span></label>
+        <div class="tl" id="tl" aria-hidden="true"></div>
+        <div class="ticks"><span>08:00</span><span>11:00</span><span>14:00</span></div>
+      </div>
+      <div class="panel" id="ov" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <section class="station" aria-labelledby="p2">
+    <header>
+      <span class="num">02</span>
+      <h2 id="p2" lang="ru">В памяти или на сокете</h2><h2 lang="en">In memory or on a socket</h2>
+    </header>
+    <div class="two">
+      <div class="panel">
+        <span class="tag ac">WebApplicationFactory&lt;Program&gt;</span>
+        <p lang="ru">Приложение целиком в памяти: настоящая маршрутизация, привязка тела, ProblemDetails — без порта. Каждый тест получает свежее приложение и поддельные часы через DI. 36 тестов API и 11 сценариев Reqnroll.</p>
+        <p lang="en">The whole app in memory: real routing, body binding and ProblemDetails, with no port. Every test gets a fresh app and a fake clock through DI. 36 API tests and 11 Reqnroll scenarios.</p>
+        <pre class="code">builder.UseEnvironment("Production");
+builder.ConfigureServices(s =>
+    s.AddSingleton&lt;TimeProvider&gt;(Clock));</pre>
+      </div>
+      <div class="panel">
+        <span class="tag px">App.Create() on Kestrel</span>
+        <p lang="ru">Браузеру нужен настоящий сокет, а у TestServer его нет. UI-тесты запускают то же приложение на <code>127.0.0.1:0</code> и читают выданный порт из <code>app.Urls</code>. 7 тестов в Chromium, трейс Playwright для каждого упавшего.</p>
+        <p lang="en">A browser needs a real socket, and TestServer has none. The UI tests start the same app on <code>127.0.0.1:0</code> and read the bound port from <code>app.Urls</code>. 7 tests in Chromium, a Playwright trace for each failure.</p>
+        <pre class="code">var app = App.Create([], s => s.AddSingleton(clock));
+app.Urls.Add("http://127.0.0.1:0");
+await app.StartAsync();</pre>
+      </div>
+    </div>
+    <div class="state warn"><b lang="ru">Почему Production</b><b lang="en">Why Production</b><span lang="ru">В Development добавляется страница ошибок для разработчика, а minimal API на кривом теле бросает исключение вместо ответа 400. Тест в другом окружении проверяет другую программу.</span><span lang="en">Development adds the developer exception page, and a minimal API throws on a bad body instead of answering 400. A test in another environment tests another program.</span></div>
+  </section>
+
+  <section class="station" aria-labelledby="p3">
+    <header>
+      <span class="num">03</span>
+      <h2 id="p3" lang="ru">Две ловушки</h2><h2 lang="en">Two traps</h2>
+    </header>
+    <div class="chips" id="trap-chips" role="group" aria-label="Trap"></div>
+    <div class="two">
+      <div class="panel demo" id="trap-before"></div>
+      <div class="panel demo" id="trap-after"></div>
+    </div>
+  </section>
+
+  <section class="station" aria-labelledby="p4">
+    <header>
+      <span class="num">04</span>
+      <h2 id="p4" lang="ru">Посаженные баги</h2><h2 lang="en">Planted bugs</h2>
+      <p class="muted" lang="ru">Два последних живут в странице, а не в API, — их могут поймать только браузерные тесты.</p>
+      <p class="muted" lang="en">The last two live in the page, not the API, so only the browser tests can catch them.</p>
+    </header>
+    <div class="list" id="mut"></div>
+    <div class="cmds" id="cmds"></div>
+  </section>
+
+  <footer>
+    <span lang="ru">Код: <a href="https://github.com/NailKarimov/dotnet-testing">github.com/NailKarimov/dotnet-testing</a> · текстом: <code>docs/dotnet.md</code> · <a href="./">Allure</a>.</span>
+    <span lang="en">Code: <a href="https://github.com/NailKarimov/dotnet-testing">github.com/NailKarimov/dotnet-testing</a> · as text: <code>docs/dotnet.md</code> · <a href="./">Allure</a>.</span>
+  </footer>
+</div>
+
+<script>
+const S = { lang: 'ru', trap: 'label' };
+const L = (ru, en) => (S.lang === 'ru' ? ru : en);
+const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const $ = (id) => document.getElementById(id);
+function chips(id, items, cur, key) {
+  $(id).innerHTML = items.map(([v, ru, en]) => `<button type="button" data-v="${v}" aria-pressed="${String(v) === String(cur)}">${L(ru, en)}</button>`).join('');
+  $(id).onclick = (e) => { const b = e.target.closest('button'); if (!b) return; S[key] = b.dataset.v; renderAll(); };
+}
+
+/* 01: minutes from 08:00, window 08:00–14:00 shown */
+const T = []; for (let m = 8 * 60; m <= 14 * 60; m += 15) T.push(m);
+const fmt = (m) => `${String(Math.floor(m / 60)).padStart(2, '0')}:${String(m % 60).padStart(2, '0')}`;
+['ns', 'ne'].forEach((id, i) => { $(id).innerHTML = T.map((m) => `<option value="${m}">${fmt(m)}</option>`).join(''); $(id).value = i ? 12 * 60 : 11 * 60; });
+function renderOv() {
+  const s = +$('ns').value, e = +$('ne').value, m1 = $('m1').checked;
+  const os = 600, oe = 660;
+  const pct = (m) => ((m - 480) / 360) * 100;
+  let verdict, cls;
+  if (e <= s) { verdict = [400, L('Конец не позже начала', 'The end is not after the start')]; cls = 'bad'; }
+  else {
+    const clash = m1 ? (os <= e && s <= oe) : (os < e && s < oe);
+    verdict = clash ? [409, L('Переговорка занята: Booked 10:00–11:00: Planning', 'The room is already booked: Booked 10:00–11:00: Planning')] : [201, L('Забронировано', 'Booked')];
+    cls = clash ? 'bad' : 'ok';
+  }
+  const touching = e === os || s === oe;
+  $('tl').innerHTML = `<div class="bar old" style="left:${pct(os)}%;width:${pct(oe) - pct(os)}%">Planning</div>` +
+    (e > s ? `<div class="bar new ${cls}" style="left:${pct(s)}%;width:${pct(e) - pct(s)}%">${fmt(s)}–${fmt(e)}</div>` : '');
+  $('ov').innerHTML = `<div class="state ${cls}"><b>${verdict[0]}</b><span>${esc(verdict[1])}</span></div>` +
+    (touching && e > s ? `<p class="muted">${m1 ? L('Встречи встык. Мутант M1 считает их конфликтом — тест «ends exactly when the other starts → allowed» падает.', 'Back to back. Mutant M1 calls this a clash, and the test "ends exactly when the other starts → allowed" fails.') : L('Встречи встык — это разрешено. Ровно эту границу проверяют два случая таблицы.', 'Back to back is allowed. Two rows of the table check exactly this boundary.')}</p>` : '');
+}
+['ns', 'ne', 'm1'].forEach((id) => $(id).addEventListener('change', renderOv));
+
+/* 03 */
+const TRAPS = {
+  label: {
+    name: ['Подпись вокруг поля', 'A label around the field'],
+    before: [L('Было: <label>Room <select>…</select></label>', 'Before: <label>Room <select>…</select></label>'), 'Room Fjord (4 seats)', 'Start 10:00', L('Доступное имя поля включает его значение. Скринридер читает «Room Fjord (4 seats)», а GetByLabel("Room", Exact) не находит поле.', 'The field\'s accessible name includes its value. A screen reader says "Room Fjord (4 seats)", and GetByLabel("Room", Exact) finds nothing.')],
+    after: [L('Стало: <label for="room">Room</label><select id="room">', 'After: <label for="room">Room</label><select id="room">'), 'Room', 'Start', L('Имя поля — ровно подпись. Тест на локаторы заодно проверяет доступность формы.', 'The field\'s name is exactly the label. The locator test checks the form\'s accessibility too.')],
+  },
+  regex: {
+    name: ['Шаг Reqnroll', 'A Reqnroll step'],
+    before: [L('Было', 'Before'), '[Given(@"today is (\\d{4}-\\d{2}-\\d{2})")]', 'Cucumber expression → "\\d" is not a valid escape', L('Первый прогон в CI: все 11 сценариев упали с ошибкой привязки. Без якорей Reqnroll читает текст шага как Cucumber expression.', 'The first CI run: all 11 scenarios failed with a binding error. Without anchors Reqnroll reads a step as a Cucumber expression.')],
+    after: [L('Стало', 'After'), '[Given(@"^today is (\\d{4}-\\d{2}-\\d{2})$")]', 'regular expression ✓', L('С ^ и $ это регулярное выражение. Простые шаги вроде «the booking is confirmed» остаются без якорей.', 'With ^ and $ it is a regular expression. Plain steps like "the booking is confirmed" stay unanchored.')],
+  },
+};
+function renderTrap() {
+  chips('trap-chips', Object.entries(TRAPS).map(([k, t]) => [k, t.name[0], t.name[1]]), S.trap, 'trap');
+  const t = TRAPS[S.trap];
+  const box = (x, cls) => `<span class="tag ${cls}">${esc(x[0])}</span><span class="name">${esc(x[1])}</span><span class="name">${esc(x[2])}</span><p class="muted">${esc(x[3])}</p>`;
+  $('trap-before').innerHTML = box(t.before, 'bad');
+  $('trap-after').innerHTML = box(t.after, 'ok');
+}
+
+const MUT = [
+  ['M1', ['встык считается конфликтом', 'touching bookings clash'], ['таблица пересечений, Reqnroll', 'overlap table, Reqnroll']],
+  ['M2', ['бронь до 4 ч 15 мин', 'bookings up to 4 h 15 min'], ['таблица времени', 'times table']],
+  ['M4', ['можно забронировать вчера', 'yesterday can be booked'], ['прошедшие даты', 'past dates']],
+  ['M5', ['на одного больше, чем мест', 'one person more than the seats'], ['таблица вместимости', 'capacity table']],
+  ['M8', ['бронь блокирует все комнаты', 'a booking blocks every room'], ['другая комната', 'another room']],
+  ['M10', ['пропал nosniff', 'nosniff header dropped'], ['заголовки безопасности', 'security headers']],
+  ['M11', ['страница рендерит название как HTML (XSS)', 'the page renders titles as HTML (XSS)'], ['UI: название с разметкой', 'UI: a title with markup']],
+  ['M12', ['страница прячет сообщение сервера', "the page hides the server's message"], ['UI: alert о конфликте', 'UI: the clash alert']],
+];
+function renderMut() { $('mut').innerHTML = MUT.map((m) => `<div class="item"><b>${m[0]}</b><span>${esc(L(...m[1]))}</span><span class="muted">${esc(L(...m[2]))} · ${L('пойман', 'caught')}</span></div>`).join('') + `<p class="muted">${L('Ещё четыре (закрытие, сетка 15 минут, повторная отмена, длина названия) — тоже пойманы: 12 из 12.', 'Four more (closing time, the 15-minute grid, cancelling twice, title length) are caught too: 12 of 12.')}</p>`; }
+const CMDS = ['dotnet test tests/BookingApp.Tests', 'dotnet test tests/BookingApp.Tests --filter Category=api', 'python3 scripts/mutants.py'];
+function renderCmds() { $('cmds').innerHTML = CMDS.map((c, i) => `<div class="cmd"><code id="cmd-${i}">${esc(c)}</code><button type="button" data-c="${i}">${L('Копировать', 'Copy')}</button></div>`).join(''); }
+$('cmds').addEventListener('click', (e) => {
+  const b = e.target.closest('[data-c]'); if (!b) return;
+  const done = () => { b.textContent = L('Скопировано', 'Copied'); setTimeout(() => (b.textContent = L('Копировать', 'Copy')), 1500); };
+  const fallback = () => { const r = document.createRange(); r.selectNodeContents($('cmd-' + b.dataset.c)); const s = getSelection(); s.removeAllRanges(); s.addRange(r); };
+  try { navigator.clipboard.writeText(CMDS[+b.dataset.c]).then(done, fallback); } catch (err) { fallback(); }
+});
+
+function renderAll() { renderOv(); renderTrap(); renderMut(); renderCmds(); }
+function setLang(l) {
+  S.lang = l; document.body.dataset.lang = l; document.documentElement.lang = l;
+  $('lang-ru').setAttribute('aria-pressed', l === 'ru');
+  $('lang-en').setAttribute('aria-pressed', l === 'en');
+  try { localStorage.setItem('dotnet-lang', l); } catch (e) {}
+  renderAll();
+}
+document.querySelectorAll('.seg button').forEach((b) => b.addEventListener('click', () => setLang(b.dataset.l)));
+let start = document.documentElement.dataset.defaultLang || 'ru';
+try { start = localStorage.getItem('dotnet-lang') || start; } catch (e) {}
+setLang(start);
+</script>
+</body>
+</html>
