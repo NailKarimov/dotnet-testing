@@ -1,0 +1,18 @@
+POST https://jsonplaceholder.typicode.com/posts
+
+Request body:
+{
+  "userId": 5,
+  "title": "Damnatio claustrum ustilo apto supplanto somnus culpo.",
+  "body": "Ad aegrotatio trepide vix civitas blandior supplanto urbs. Patria consequatur adhaero volubilis quam accedo audacia allatus assentator uberrime. Adulescens curis ratione adflicto brevis ventito omnis casus."
+}
+
+Status: 201
+
+Response body:
+{
+  "userId": 5,
+  "title": "Damnatio claustrum ustilo apto supplanto somnus culpo.",
+  "body": "Ad aegrotatio trepide vix civitas blandior supplanto urbs. Patria consequatur adhaero volubilis quam accedo audacia allatus assentator uberrime. Adulescens curis ratione adflicto brevis ventito omnis casus.",
+  "id": 101
+}
