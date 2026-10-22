@@ -25,11 +25,11 @@ public sealed class BookingSteps : IDisposable
         _factory.Dispose();
     }
 
-    [Given(@"today is (\d{4}-\d{2}-\d{2})")]
+    [Given(@"^today is (\d{4}-\d{2}-\d{2})$")]
     public void Today(string date) =>
         _factory.Clock.Set(DateTimeOffset.Parse(date + "T09:00:00Z", System.Globalization.CultureInfo.InvariantCulture));
 
-    [When(@"I book (\w+) on (\S+) from (\d\d:\d\d) to (\d\d:\d\d) for (\d+) people as ""(.*)""")]
+    [When(@"^I book (\w+) on (\S+) from (\d\d:\d\d) to (\d\d:\d\d) for (\d+) people as ""(.*)""$")]
     public async Task Book(string room, string date, string start, string end, int people, string title)
     {
         _last = await _http.PostAsJsonAsync("/api/bookings", new { roomId = RoomIds[room], date, start, end, title, attendees = people });
@@ -37,31 +37,31 @@ public sealed class BookingSteps : IDisposable
         if (_last.StatusCode == HttpStatusCode.Created) _ids[title] = _body.GetProperty("id").GetInt32();
     }
 
-    [Given(@"(\w+) is booked on (\S+) from (\d\d:\d\d) to (\d\d:\d\d) as ""(.*)""")]
+    [Given(@"^(\w+) is booked on (\S+) from (\d\d:\d\d) to (\d\d:\d\d) as ""(.*)""$")]
     public async Task Booked(string room, string date, string start, string end, string title)
     {
         await Book(room, date, start, end, 2, title);
         Assert.That(_last!.StatusCode, Is.EqualTo(HttpStatusCode.Created));
     }
 
-    [When(@"I cancel ""(.*)""")]
+    [When(@"^I cancel ""(.*)""$")]
     public async Task Cancel(string title) =>
         Assert.That((await _http.DeleteAsync($"/api/bookings/{_ids[title]}")).StatusCode, Is.EqualTo(HttpStatusCode.NoContent));
 
     [Then("the booking is confirmed")]
     public void Confirmed() => Assert.That(_last!.StatusCode, Is.EqualTo(HttpStatusCode.Created), _body.ToString());
 
-    [Then(@"the answer is (\d+)")]
+    [Then(@"^the answer is (\d+)$")]
     public void Status(int status) => Assert.That((int)_last!.StatusCode, Is.EqualTo(status), _body.ToString());
 
-    [Then(@"the booking is refused because the room is taken by ""(.*)""")]
+    [Then(@"^the booking is refused because the room is taken by ""(.*)""$")]
     public void TakenBy(string title)
     {
         Assert.That(_last!.StatusCode, Is.EqualTo(HttpStatusCode.Conflict));
         Assert.That(_body.GetProperty("clashId").GetInt32(), Is.EqualTo(_ids[title]));
     }
 
-    [Then(@"the booking is refused with ""(.*)""")]
+    [Then(@"^the booking is refused with ""(.*)""$")]
     public void RefusedWith(string message)
     {
         Assert.That(_last!.StatusCode, Is.EqualTo(HttpStatusCode.BadRequest));
@@ -69,7 +69,7 @@ public sealed class BookingSteps : IDisposable
         Assert.That(all, Does.Contain(message));
     }
 
-    [Then(@"(\w+) on (\S+) has these bookings:")]
+    [Then(@"^(\w+) on (\S+) has these bookings:$")]
     public async Task HasBookings(string room, string date, DataTable table)
     {
         var list = await _http.GetFromJsonAsync<JsonElement>($"/api/bookings?roomId={RoomIds[room]}&date={date}");
