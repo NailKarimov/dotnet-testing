@@ -2,6 +2,7 @@
 
 [![Tests](https://github.com/NailKarimov/dotnet-testing/actions/workflows/tests.yml/badge.svg)](https://github.com/NailKarimov/dotnet-testing/actions/workflows/tests.yml)
 [![Allure report](https://img.shields.io/badge/report-Allure-orange)](https://nailkarimov.github.io/dotnet-testing/)
+[![Release](https://img.shields.io/github/v/release/NailKarimov/dotnet-testing)](https://github.com/NailKarimov/dotnet-testing/releases)
 
 ### ▶ Open online
 
@@ -78,6 +79,8 @@ docs/                        test plan, test report, guides
   coverage, then writes a per-class table to the summary;
 - it publishes the Allure report with history, coverage and the Playwright traces of failed tests to GitHub Pages;
 - the `mutants` job runs the mutation check and publishes `mutants/result.md`.
+
+Releases: committing `.github/releases/<tag>.md` runs the Release workflow, which creates the tag and the GitHub release with that file as its notes.
 
 ## Documentation
 
