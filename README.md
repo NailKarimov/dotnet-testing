@@ -3,6 +3,7 @@
 [![Tests](https://github.com/NailKarimov/dotnet-testing/actions/workflows/tests.yml/badge.svg)](https://github.com/NailKarimov/dotnet-testing/actions/workflows/tests.yml)
 [![Allure report](https://img.shields.io/badge/report-Allure-orange)](https://nailkarimov.github.io/dotnet-testing/)
 [![Release](https://img.shields.io/github/v/release/NailKarimov/dotnet-testing)](https://github.com/NailKarimov/dotnet-testing/releases)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/NailKarimov/dotnet-testing?quickstart=1)
 
 ### ▶ Open online
 
@@ -47,6 +48,8 @@ The form-label bug is a closed issue in [Issues](https://github.com/NailKarimov/
   API throws on a bad body. The tests therefore run the app as deployed.
 
 ## Running it
+
+No local setup: the **Open in GitHub Codespaces** badge starts a browser VS Code with this repository, its tools and Docker; the container runs `dotnet build tests/BookingApp.Tests` on creation, then `dotnet test tests/BookingApp.Tests --filter Category=api` works in the terminal.
 
 Requirements: .NET 10 SDK, PowerShell (for the Playwright installer).
 
