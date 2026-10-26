@@ -11,6 +11,3 @@
 | M9 | titles up to 200 characters | caught | a |
 | M10 | nosniff header dropped | caught | SecurityHeaders |
 | M11 | the page renders titles as HTML (XSS) | caught | ATitleWithMarkup_IsShownAsText |
-| M12 | the page hides the server's message | caught | AClash_IsExplainedInAnAlert, TheServersValidationMessage_IsShown |
-
-All mutants caught.
