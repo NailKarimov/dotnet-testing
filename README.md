@@ -3,6 +3,16 @@
 [![Tests](https://github.com/NailKarimov/dotnet-testing/actions/workflows/tests.yml/badge.svg)](https://github.com/NailKarimov/dotnet-testing/actions/workflows/tests.yml)
 [![Allure report](https://img.shields.io/badge/report-Allure-orange)](https://nailkarimov.github.io/dotnet-testing/)
 
+### ▶ Open online
+
+| Page | What it is |
+| --- | --- |
+| **[Allure test report](https://nailkarimov.github.io/dotnet-testing/)** | latest CI run |
+| [Planted bugs](https://nailkarimov.github.io/dotnet-testing/mutants/result.md) | mutation check result |
+| [C# tests](https://nailkarimov.github.io/dotnet-testing/dotnet.html) | interactive guide |
+
+Click these links: opening an `.html` file in the file list shows its source code, GitHub does not run it.
+
 API, BDD and UI tests **in C#**. They run against a meeting-room booking app of our own: an ASP.NET Core minimal
 API with RFC 7807 ProblemDetails and one embedded page.
 
