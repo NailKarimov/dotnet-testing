@@ -35,6 +35,8 @@ API with RFC 7807 ProblemDetails and one embedded page.
 
 ## Findings
 
+The form-label bug is a closed issue in [Issues](https://github.com/NailKarimov/dotnet-testing/issues?q=is%3Aissue+is%3Aclosed+label%3Abug).
+
 - **Form labels.** A `<label>` wrapped around a field gave it the accessible name "Room Fjord (4 seats)", which
   includes the field's value. Screen readers read it that way, and an exact `GetByLabel` could not find the
   field. Fixed with `<label for>`.
