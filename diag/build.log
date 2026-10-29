@@ -1,6 +1,6 @@
   Determining projects to restore...
-  Restored /home/runner/work/dotnet-testing/dotnet-testing/src/BookingApp/BookingApp.csproj (in 65 ms).
-  Restored /home/runner/work/dotnet-testing/dotnet-testing/tests/BookingApp.Tests/BookingApp.Tests.csproj (in 6.11 sec).
+  Restored /home/runner/work/dotnet-testing/dotnet-testing/src/BookingApp/BookingApp.csproj (in 58 ms).
+  Restored /home/runner/work/dotnet-testing/dotnet-testing/tests/BookingApp.Tests/BookingApp.Tests.csproj (in 7.39 sec).
   BookingApp -> /home/runner/work/dotnet-testing/dotnet-testing/src/BookingApp/bin/Debug/net10.0/BookingApp.dll
   BookingApp.Tests -> /home/runner/work/dotnet-testing/dotnet-testing/tests/BookingApp.Tests/bin/Debug/net10.0/BookingApp.Tests.dll
 
@@ -8,4 +8,4 @@ Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:10.11
+Time Elapsed 00:00:15.78
